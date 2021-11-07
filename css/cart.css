@@ -1,0 +1,40 @@
+body {
+    background-image:url('../Assets/Images/wall3.webp');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+  .new {
+      text-align: center;
+      color:white;
+  }
+  a {
+    margin-left:5%; 
+    text-decoration:none; 
+    color:white; 
+    font-size:1.5em; 
+  }
+  .rm {
+    margin-left: 25%;
+  }
+  .h2 {
+    text-align: center;
+    color:white;
+    margin-top: 4%;
+  }
+  .tab table {
+      width: 100%;
+      color: white;
+  }
+  /* .li1 {
+    margin-left: 10%; color:white; font-size:22px;
+  }
+  .li2 {
+    color:white; padding-left: 28.5%; font-size:22px;
+  }
+  .li3 {
+    color:white; padding-left:17.5%; font-size:22px;
+  }
+  .li4 {
+    color:white; padding-left: 19%; font-size:22px;
+  } */
