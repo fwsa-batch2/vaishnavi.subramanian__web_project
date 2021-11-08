@@ -1,0 +1,19 @@
+body {
+    background-image: url('../Assets/Images/wall3.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+table th h2 {
+    color: white;
+}
+
+.space {
+    padding-top: 15%;
+}
+
+.align {
+    text-align: center;
+    color: white;
+}
