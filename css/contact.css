@@ -30,8 +30,7 @@ a {
 .div {
     background-color: rgb(247, 245, 245);
     opacity: 0.5;
-    width: 30%;
-    height: 370px;
+    width: 34%;
     margin: auto;
     margin-top: 76px;
     font-size: 22px;
@@ -40,4 +39,21 @@ a {
 .div form table {
     align-items: center;
     width: 100%;
+}
+
+td {
+    padding: 20px;
+    padding-left: 6%;
+}
+
+.button {
+    font-size: 19px;
+    margin-left: 40%;
+    margin-bottom: 4%;
+}
+
+.table {
+    width: 70%;
+    text-align: left;
+    padding-top: 30px
 }
