@@ -1,32 +1,38 @@
 body {
-    background-image:url('../Assets/Images/wall3.webp');
+    background-image: url('../Assets/Images/wall3.webp');
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
-  }
-  .class1 {
+}
+
+.class1 {
     margin-left: 39.2%;
-  }
-  .rm {
-      text-align: center;
-      color: white;
-  }
-  a {
-    margin-left:5%; 
-    text-decoration:none; 
-    color:white; 
-    font-size:1.5em; 
-  }
-  .cafe {
-      margin-left: 25%;
-  }
-  .h2 {
-    color:azure; 
-    text-align: center; 
-    font-family:'Courier New', Courier, monospace;
-    font-size: xx-large;
-  }
-  .h22 {
-    color:azure; 
+}
+
+.now {
     text-align: center;
-  }
+    color: white;
+}
+
+a {
+    margin-left: 5%;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+.cafe {
+    margin-left: 25%;
+}
+
+.h2 {
+    color: azure;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+}
+
+.h22 {
+    color: azure;
+    text-align: center;
+}
