@@ -41,18 +41,85 @@ a {
 
 .li2 {
     color: white;
-    padding-left: 28.5%;
+    padding-left: 23%;
     font-size: 22px;
 }
 
 .li3 {
     color: white;
-    padding-left: 17.5%;
+    padding-left: 12%;
     font-size: 22px;
 }
 
 .li4 {
     color: white;
-    padding-left: 19%;
+    padding-left: 15%;
     font-size: 22px;
+}
+
+.a1 {
+    font-size: 1.5vw;
+    margin-left: 50px;
+    padding-bottom: 20%;
+    color: white;
+}
+
+.button {
+    margin-left: 430px;
+    font-size: 1vw;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+}
+
+.a2 {
+    font-size: 1vw;
+    padding-left: -5%;
+    color: white;
+}
+
+.button2 {
+    margin-left: 20px;
+    font-size: 1vw;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+}
+
+.a3 {
+    padding-left: 190px;
+    font-size: 1.3vw;
+    color: white
+}
+
+.a4 {
+    padding-left: 200px;
+    font-size: 1.3vw;
+    color: white;
+}
+
+.img {
+    margin-left: 70px;
+    height: 200px;
+    width: 300px;
+}
+
+.label1 {
+    margin-left: 81.5%;
+    color: white;
+    font-size: 1.5vw;
+}
+
+.label2 {
+    padding: 5%;
+    color: white;
+    font-size: 1.5vw;
+}
+
+.order {
+    color: black;
+    margin-left: 88%;
+    height: 26px;
+    width: 175px;
+    font-size: 1vw;
 }
