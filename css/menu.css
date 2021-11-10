@@ -1,7 +1,7 @@
 body {
     background-image: url('../Assets/Images/wall3.webp');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
     background-attachment: fixed;
 }
 
@@ -17,6 +17,10 @@ a {
     font-size: 1.5em;
 }
 
+.rm {
+    margin-left: 25%;
+}
+
 table th h2 {
     color: white;
 }
@@ -28,4 +32,20 @@ table th h2 {
 .align {
     text-align: center;
     color: white;
+}
+
+h1 {
+    color: white;
+}
+
+.class1 {
+    margin-top: 6%;
+    margin-left: 9%;
+    width: 70%;
+}
+
+.class2 {
+    margin-top: 6%;
+    margin-left: 19%;
+    width: 70%;
 }
