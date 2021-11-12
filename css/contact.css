@@ -32,7 +32,7 @@ a {
     opacity: 0.5;
     width: 34%;
     margin: auto;
-    margin-top: 76px;
+    margin-top: 50px;
     font-size: 22px;
 }
 
@@ -56,4 +56,9 @@ td {
     width: 70%;
     text-align: left;
     padding-top: 30px
+}
+
+.footer {
+    color: white;
+    margin-top: 100px;
 }
