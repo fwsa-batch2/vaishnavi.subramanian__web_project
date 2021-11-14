@@ -32,7 +32,24 @@ a {
     color: white;
 }
 
-.li1 {
+img {
+    width: 220px;
+}
+
+.tab table tr td:nth-child(1) {
+    padding-left: 4%;
+}
+
+.order {
+    color: black;
+    margin-left: 1470px;
+    height: 31px;
+    width: 175px;
+    font-size: 150%;
+}
+
+
+/* .tab table .li1 {
     margin-left: 10%;
     color: white;
     font-size: 22px;
@@ -54,9 +71,10 @@ a {
     color: white;
     padding-left: 15%;
     font-size: 22px;
-}
+} */
 
-#a1 {
+
+/* #a1 {
     font-size: 1.5vw;
     margin-left: 50px;
     padding-bottom: 20%;
@@ -122,8 +140,14 @@ a {
     height: 26px;
     width: 175px;
     font-size: 1vw;
-}
+} */
 
 .hr-1 {
-    margin-top: -480px;
+    margin-top: -440px;
+}
+
+.bad {
+    margin-top: 390px;
+    margin-left: 1470px;
+    color: white;
 }
