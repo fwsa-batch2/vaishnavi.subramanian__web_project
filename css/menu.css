@@ -49,3 +49,12 @@ h1 {
     margin-left: 19%;
     width: 70%;
 }
+
+.th1 {
+    padding-left: 6%;
+    color: white;
+}
+
+button {
+    padding: 2px 32px;
+}
