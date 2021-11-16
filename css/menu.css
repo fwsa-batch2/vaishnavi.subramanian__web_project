@@ -10,6 +10,11 @@ body {
     color: white;
 }
 
+image {
+    width: 450;
+    height: 400;
+}
+
 a {
     margin-left: 5%;
     text-decoration: none;
