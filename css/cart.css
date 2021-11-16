@@ -30,6 +30,7 @@ a {
 .tab table {
     width: 100%;
     color: white;
+    border-bottom: 1px solid;
 }
 
 img {

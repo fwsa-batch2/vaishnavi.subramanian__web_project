@@ -13,6 +13,11 @@ body {
     display: flex;
 }
 
+image {
+    width: 110px;
+    height: 110px;
+}
+
 .h1 {
     text-align: center;
     color: white;
