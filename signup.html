@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>R&M login</title>
+    <link rel="stylesheet" href="./css/signup.css">
+</head>
+
+<body>
+    <div>
+        <h1 class="now">R&M Cafe</h1>
+        <span class="rm">
+            <a href="./index.html" >Home</a>
+            <a href="./rmmenu.html" >Menu</a>
+            <a href="./rmreview.html" >Review</a>
+            <a href="./rmcontact.html" >Contact</a>
+            <a href="./cart.html" >Cart</a>
+        </span>
+    </div>
+    <br>
+    <hr>
+
+    <div class="div-1">
+        <form class="form" action="./rmmenu.html">
+            <label>Full Name:</label> <input type="text" class="input-1" required> <br>
+            <label>Phone Number:</label> <input type="tel" class="input-2" required> <br>
+            <label>Email Id:</label> <input type="email" class="input-2" required> <br>
+            <label>Set Password:</label> <input type="password" class="input-2" required> <br>
+            <input id="input-3" type="checkbox" name="t&c" required>
+            <label class="label-1">I accept the terms and conditions</label><br>
+            <button onclick="loginFunction()">Login Now</button>
+
+        </form>
+    </div>
+
+    <script>
+        function loginFunction() {
+            alert("Your account has been created.  Enjoy buying !")
+        }
+    </script>
+</body>
+
+</html>

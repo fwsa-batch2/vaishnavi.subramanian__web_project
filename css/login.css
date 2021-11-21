@@ -1,0 +1,66 @@
+body {
+    background-image: url('../Assets/Images/wall3.webp');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.now {
+    text-align: center;
+    color: white;
+}
+
+.a-1 {
+    margin-left: 5%;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+.rm {
+    margin-left: 25%;
+}
+
+.div-1 {
+    background-color: black;
+    color: white;
+    height: 280px;
+    width: 600px;
+    text-align: center;
+    margin-left: 650px;
+    margin-top: 10%;
+    border-radius: 2%;
+    opacity: 0.5;
+}
+
+.form {
+    font-size: x-large;
+    padding: 9%;
+}
+
+input {
+    width: 68%;
+}
+
+.input-2 {
+    margin-top: 15%;
+}
+
+button {
+    margin-top: 12%;
+    font-size: medium;
+}
+
+button:hover {
+    transition: 2S;
+    width: 17%;
+}
+
+.label-1 {
+    font-size: medium;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>R&M login</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+    <div>
+        <h1 class="now">R&M Cafe</h1>
+        <span class="rm">
+            <a class="a-1" href="./index.html" >Home</a>
+            <a class="a-1" href="./rmmenu.html" >Menu</a>
+            <a class="a-1" href="./rmreview.html" >Review</a>
+            <a class="a-1" href="./rmcontact.html" >Contact</a>
+            <a class="a-1" href="./cart.html" >Cart</a>
+        </span>
+    </div>
+    <br>
+    <hr>
+
+    <div class="div-1">
+        <form class="form" action="./rmmenu.html">
+            <label>Email:</label> <input type="text" class="input-1" required> <br>
+            <label>Password:</label> <input type="password" class="input-2" required> <br>
+            <button onclick="loginFunction()">Login</button>
+            <button class="button-2"><a href="./signup.html"><label class="label-1">Sign Up</label></a> </button>
+        </form>
+    </div>
+
+    <script>
+        function loginFunction() {
+            alert("You've been successfully logged in.")
+        }
+    </script>
+</body>
+
+</html>
