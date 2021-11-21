@@ -1,0 +1,36 @@
+body {
+    background-image: url('../Assets/Images/wall3.webp');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    color: white;
+}
+
+.now {
+    text-align: center;
+    color: white;
+}
+
+a {
+    margin-left: 5%;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+.rm {
+    margin-left: 25%;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    color: white;
+}
+
+label {
+    color: white;
+}
