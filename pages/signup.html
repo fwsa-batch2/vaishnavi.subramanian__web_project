@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>R&M login</title>
+    <title>R&M Cafe</title>
     <link rel="stylesheet" href="../assets/css/signup.css">
 </head>
 
@@ -22,18 +22,43 @@
     <hr>
 
     <div class="div-1">
-        <form class="form" action="./rmmenu.html">
-            <label>Full Name:</label> <input type="text" class="input-1" required> <br>
-            <label>Phone Number:</label> <input type="tel" class="input-2" required> <br>
-            <label>Email Id:</label> <input type="email" class="input-2" required> <br>
-            <label>Set Password:</label> <input type="password" class="input-2" required> <br>
+        <form class="form" onsubmit="submitHandler()">
+            <label>Full Name:</label> <input type="text" class="input-1" id="fullName" required> <br>
+            <label>Phone Number:</label> <input type="tel" class="input-2" id="phoneNumber" required> <br>
+            <label>Email Id:</label> <input type="email" class="input-2" id="email" required> <br>
+            <label>Set Password:</label> <input type="password" class="input-2" id="password" required> <br>
             <input id="input-3" type="checkbox" name="t&c" required>
             <label class="label-1">I agree to the<a href="./rmtc.html" class="a-2">terms and conditions</a></label><br>
-            <button onclick="loginFunction()">Login Now</button>
+            <button>Login Now</button>
 
         </form>
     </div>
+    <script>
+        let details = [];
 
+        function submitHandler() {
+            event.preventDefault();
+            const username = document.getElementById("fullName").value;
+            const contact = document.getElementById("phoneNumber").value;
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            let userDetail = {
+                "username": username,
+                "contact": contact,
+                "email": email,
+                "password": password
+            };
+
+
+            console.log(details);
+
+            const detailsInString = JSON.stringify(userDetail);
+            localStorage.setItem("details", detailsInString);
+
+            window.location.href = "./rmmenu.html";
+        }
+    </script>
 </body>
 
 </html>

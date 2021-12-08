@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>R&M login</title>
+    <title>R&M Cafe</title>
     <link rel="stylesheet" href="../assets/css/login.css">
 </head>
 
@@ -22,14 +22,33 @@
     <hr>
 
     <div class="div-1">
-        <form class="form" action="./rmmenu.html">
-            <label>Email:</label> <input type="text" class="input-1" required> <br>
-            <label>Password:</label> <input type="password" class="input-2" required> <br>
-            <button onclick="loginFunction()">Login</button>
+        <form class="form" onsubmit="submitHandler()">
+            <label>Email:</label> <input type="text" class="input-1" id="email" required> <br>
+            <label>Password:</label> <input type="password" class="input-2" id="password" required> <br>
+            <button>Login</button>
             <button class="button-2"><a href="./signup.html"><label class="label-1">Sign Up</label></a> </button>
         </form>
     </div>
+    <script>
+        let details = [];
 
+        function submitHandler() {
+            event.preventDefault();
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            let userDetail = {
+                "email": email,
+                "password": password
+            };
+
+            const detailsInString = JSON.stringify(userDetail);
+            localStorage.setItem("details", detailsInString);
+
+
+            window.location.href = "./rmmenu.html";
+        }
+    </script>
 </body>
 
 </html>

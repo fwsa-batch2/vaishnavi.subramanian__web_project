@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>R&M Cart</title>
+    <title>R&M Cafe</title>
     <link rel="stylesheet" href="../assets/css/cart.css">
 </head>
 
@@ -21,47 +21,35 @@
     <br>
     <hr>
     <h2 class="h2">Your cart list appears here</h2>
+    <button>Delete All</button>
     <br>
     <hr>
     <div class="tab">
         <table>
-            <tr>
-                <th style="width: 20%;">
-                    <h2>Varieties</h2>
-                </th>
-                <th style="width: 30%;">
-                    <h2>Quantity</h2>
-                </th>
-                <th>
-                    <h2>Price</h2>
-                </th>
-                <th>
-                    <h2>Total</h2>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <h3>Cappucino</h3><img src="../assets/images/Cappucino.jpeg" width="250"></th>
-                <th><button>-</button><span> 3 </span><button>+</button></th>
-                <th>
-                    <h3>&#x20B9;130</h3>
-                </th>
-                <th>
-                    <h3>&#x20B9;390</h3>
-                </th>
-            </tr>
-            <tr>
-                <th>
-                    <h3>Frappe</h3><img src="../assets/images/Frappe.jpg" width="250"></th>
-                <th><button>-</button><span> 2 </span><button>+</button></th>
-                <th>
-                    <h3>&#x20B9;170</h3>
-                </th>
-                <th>
-                    <h3>&#x20B9;340</h3>
-                </th>
-            </tr>
+            <thead>
+                <tr>
+                    <th style="width: 20%;">
+                        <h2>Varieties</h2>
+                    </th>
+                    <th style="width: 30%;">
+                        <h2>Quantity</h2>
+                    </th>
+                    <th>
+                        <h2>Price</h2>
+                    </th>
+                    <th>
+                        <h2>Total</h2>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="table">
+
+            </tbody>
+
+
         </table>
+
+
 
     </div>
     <hr class="hr-1">
@@ -70,59 +58,8 @@
     <h2 class="bad">Total = &#x20B9;730</h2>
     <hr><br>
     <button class="order"><a href="./rmpayment.html">Place Order</a></button><br><br>
-    <!-- <h2 class="h2">Your Cart list appear here</h2>
-    <br><br>
-    <hr><br><br>
-    <span>
-    <a class="li1" ><b>Varieties</b></a>
-    <a class="li2" ><b>Quantity</b></a>
-    <a class="li3" ><b>Price</b></a>
-    <a class="li4" ><b>Total</b></a>
-    </span>
-    <br><br><br>
-    <div>
-        <hr>
-        <table>
-            <tr>
-                <th><img src="./Assets/Images/Latte.jpeg" alt="" style="margin-left: 70px; height: 200px; width: 300px;"></th>
-                <th><a class="a1"><b>Latte</b></a><br>
-                    <button type="button" name="button" class="button"><span>-</span></button>
-                    <a class="a2">1</a>
-                    <button type="button" name="button" class="button2">+</span></button>
-                    <a class="a3">&#x20B9;150</a>
-                    <a class="a4">&#x20B9;150</a>
-                </th><br><br>
-            </tr>
-        </table>
-    </div><br><br>
-    <div>
-        <table>
-            <tr>
-                <th><img src="./Assets/Images/Mocha.jpg" class="img"></th>
-                <th><a id="a1"><b>Mocha</b></a><br>
-                    <button type="button" name="button" class="button">-</span></button>
-                    <a id="a2">1</a>
-                    <button type="button" name="button" class="button2"><span>+</span></button>
-                    <a id="a3">&#x20B9;115</a>
-                    <a id="a4">&#x20B9;115</a>
-                </th><br><br>
-            </tr>
-        </table>
-    </div>
-    <hr>
-    <label class="label1">Total</label>
-    <label class="label2">&#x20B9;265</label>
-    <hr><br>
-    <button class="order"><b>Place Order</b></button><br><br>
 
 
-
-
-
-
-
-
-
-
+    <script src="./../assets/js/cart.js"></script>
 </body>
-<html> -->
+<html>

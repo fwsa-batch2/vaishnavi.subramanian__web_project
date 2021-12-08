@@ -25,12 +25,15 @@ a {
 h2 {
     color: white;
     text-align: center;
-}
-
-p {
-    color: white;
+    font-family: sans-serif;
 }
 
 label {
     color: white;
+    font-family: inherit;
+}
+
+p {
+    color: white;
+    font-family: sans-serif;
 }
