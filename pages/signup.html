@@ -24,15 +24,15 @@
     <div class="div-1">
         <form class="form" onsubmit="submitHandler()">
             <label>Full Name:</label> <input type="text" class="input-1" id="fullName" required> <br>
-            <label>Phone Number:</label> <input type="tel" class="input-2" id="phoneNumber" required> <br>
+            <label>Phone Number:</label> <input type="number" min="0000000001" maxlength="10" class="input-2" id="phoneNumber" required> <br>
             <label>Email Id:</label> <input type="email" class="input-2" id="email" required> <br>
             <label>Set Password:</label> <input type="password" class="input-2" id="password" required> <br>
             <input id="input-3" type="checkbox" name="t&c" required>
             <label class="label-1">I agree to the<a href="./rmtc.html" class="a-2">terms and conditions</a></label><br>
-            <button>Login Now</button>
-
+            <button type="submit">Register</button>
         </form>
     </div>
+
     <script>
         let details = [];
 
@@ -49,16 +49,25 @@
                 "email": email,
                 "password": password
             };
-
-
-            console.log(details);
-
-            const detailsInString = JSON.stringify(userDetail);
+            details.push(userDetail);
+            const detailsInString = JSON.stringify(details);
             localStorage.setItem("details", detailsInString);
 
             window.location.href = "./rmmenu.html";
         }
+
+        function onRefresh() {
+            let detail = localStorage.getItem("details");
+            if (detail) {
+                detail = details;
+            } else {
+                details = [];
+            }
+
+        }
+        onRefresh();
     </script>
+
 </body>
 
 </html>

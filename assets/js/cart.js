@@ -1,7 +1,7 @@
  let list = [];
 
  function onPageLoadHandler() {
-     console.log(localStorage.getItem("list"));
+
      const cartInString = localStorage.getItem("lists");
      const cartItems = JSON.parse(cartInString);
 
@@ -24,13 +24,12 @@
 
      }
 
-     console.log(list_1);
-
      let table = document.getElementById("table");
      table.innerHTML = list_1;
  }
 
-
-
-
  onPageLoadHandler();
+
+ function deleteAll() {
+     localStorage.clear;
+ }

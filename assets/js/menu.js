@@ -4,7 +4,7 @@ function addCoffee(coffeeName) {
 
     list.push(coffeeName);
     console.log(list);
-    localStorage.setItem("lists", JSON.stringify(list));
+    localStorage.setItem("coffeeLists", JSON.stringify(list));
 
 }
 

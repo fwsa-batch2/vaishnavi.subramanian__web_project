@@ -37,9 +37,20 @@ a {
     text-align: center;
 }
 
-button {
-    margin-left: 46.7%;
-    width: 7%;
+.login {
+    margin-left: 46%;
+    width: 8%;
+    height: 5%;
+    font-size: x-large;
+    letter-spacing: 1%;
+    background-color: rgb(53, 47, 47);
+    color: white;
+    padding-bottom: 0.4%;
+}
+
+.register {
+    margin-left: 45%;
+    width: 10%;
     height: 5%;
     font-size: x-large;
     letter-spacing: 1%;

@@ -18,6 +18,7 @@
             <a class="a-1" href="./cart.html" >Cart</a>
         </span>
     </div>
+
     <br>
     <hr>
 
@@ -25,30 +26,32 @@
         <form class="form" onsubmit="submitHandler()">
             <label>Email:</label> <input type="text" class="input-1" id="email" required> <br>
             <label>Password:</label> <input type="password" class="input-2" id="password" required> <br>
-            <button>Login</button>
-            <button class="button-2"><a href="./signup.html"><label class="label-1">Sign Up</label></a> </button>
+            <button type="submit">Login</button>
         </form>
     </div>
+
     <script>
-        let details = [];
+        let list = [];
 
         function submitHandler() {
             event.preventDefault();
             const email = document.getElementById("email").value;
             const password = document.getElementById("password").value;
 
-            let userDetail = {
-                "email": email,
-                "password": password
-            };
+            let allDetails = JSON.parse(localStorage.getItem("details"));
 
-            const detailsInString = JSON.stringify(userDetail);
-            localStorage.setItem("details", detailsInString);
-
-
-            window.location.href = "./rmmenu.html";
+            for (let i = 0; i < allDetails.length; i++) {
+                // let isMatch = false;
+                if (allDetails[i].email == email && allDetails[i].password == password) {
+                    window.location.href = "./rmmenu.html";
+                } else {
+                    alert("Invalid login details");
+                    window.location.href = "#";
+                }
+            }
         }
     </script>
+
 </body>
 
 </html>
