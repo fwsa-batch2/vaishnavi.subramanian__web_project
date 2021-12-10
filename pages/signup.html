@@ -24,7 +24,7 @@
     <div class="div-1">
         <form class="form" onsubmit="submitHandler()">
             <label>Full Name:</label> <input type="text" class="input-1" id="fullName" required> <br>
-            <label>Phone Number:</label> <input type="number" min="0000000001" maxlength="10" class="input-2" id="phoneNumber" required> <br>
+            <label>Phone Number:</label> <input type="tel" max="0000000001" maxlength="10" class="input-2" id="phoneNumber" required> <br>
             <label>Email Id:</label> <input type="email" class="input-2" id="email" required> <br>
             <label>Set Password:</label> <input type="password" class="input-2" id="password" required> <br>
             <input id="input-3" type="checkbox" name="t&c" required>
@@ -43,7 +43,7 @@
             const email = document.getElementById("email").value;
             const password = document.getElementById("password").value;
 
-            let userDetail = {
+            const userDetail = {
                 "username": username,
                 "contact": contact,
                 "email": email,
