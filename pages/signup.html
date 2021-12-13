@@ -11,61 +11,40 @@
     <div>
         <h1 class="now">R&M Cafe</h1>
         <span class="rm">
-            <a href="../index.html" class="a-1">Home</a>
-            <a href="./rmmenu.html" class="a-1">Menu</a>
-            <a href="./rmreview.html" class="a-1">Review</a>
-            <a href="./rmcontact.html" class="a-1">Contact</a>
-            <a href="./cart.html" class="a-1">Cart</a>
-        </span>
+                <a href="../index.html" class="a-1">Home</a>
+                <a href="./rmmenu.html" class="a-1">Menu</a>
+                <a href="./rmreview.html" class="a-1">Review</a>
+                <a href="./rmcontact.html" class="a-1">Contact</a>
+                <a href="./cart.html" class="a-1">Cart</a>
+            </span>
     </div>
     <br>
     <hr>
 
     <div class="div-1">
         <form class="form" onsubmit="submitHandler()">
-            <label>Full Name:</label> <input type="text" class="input-1" id="fullName" required> <br>
-            <label>Phone Number:</label> <input type="tel" max="0000000001" maxlength="10" class="input-2" id="phoneNumber" required> <br>
-            <label>Email Id:</label> <input type="email" class="input-2" id="email" required> <br>
-            <label>Set Password:</label> <input type="password" class="input-2" id="password" required> <br>
+            Full Name:
+            <input type="text" class="input-1" pattern="[A-Za-z]+" minlength="3" maxlength="20" id="fullName" required>
+            <br> Phone Number:<input type="tel" pattern="[0-9]+" maxlength="10" minlength="10" class="input-2" id="phoneNumber" required>
+            <br> Email Id:<input type="email" class="input-2" id="email" required>
+            <br> Set Password:
+            <input type="password" class="input-2" id="password" required>
+            <br>
+            <input type="checkbox" name="checkbox" onchange="showPwd()" id="showPassword"><label class="showPassword">Show password</label><br>
             <input id="input-3" type="checkbox" name="t&c" required>
-            <label class="label-1">I agree to the<a href="./rmtc.html" class="a-2">terms and conditions</a></label><br>
+            <label class="label-1">I agree to the<a href="./rmtc.html" class="a-2">terms and conditions</a>
+                </label><br>
+
+            <div id="email">
+
+            </div>
             <button type="submit">Register</button>
         </form>
     </div>
 
-    <script>
-        let details = [];
 
-        function submitHandler() {
-            event.preventDefault();
-            const username = document.getElementById("fullName").value;
-            const contact = document.getElementById("phoneNumber").value;
-            const email = document.getElementById("email").value;
-            const password = document.getElementById("password").value;
 
-            const userDetail = {
-                "username": username,
-                "contact": contact,
-                "email": email,
-                "password": password
-            };
-            details.push(userDetail);
-            const detailsInString = JSON.stringify(details);
-            localStorage.setItem("details", detailsInString);
-
-            window.location.href = "./rmmenu.html";
-        }
-
-        function onRefresh() {
-            let detail = localStorage.getItem("details");
-            if (detail) {
-                detail = details;
-            } else {
-                details = [];
-            }
-
-        }
-        onRefresh();
+    <script src="./../assets/js/signup.js">
     </script>
 
 </body>

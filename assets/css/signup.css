@@ -62,7 +62,7 @@ button:hover {
 }
 
 #input-3 {
-    margin-top: 10%;
+    margin-top: 7%;
 }
 
 .label-1 {
@@ -73,4 +73,8 @@ button:hover {
     font-size: medium;
     margin-left: 1%;
     color: white;
+}
+
+.showPassword {
+    font-size: medium;
 }

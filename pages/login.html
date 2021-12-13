@@ -41,7 +41,6 @@
             let allDetails = JSON.parse(localStorage.getItem("details"));
 
             for (let i = 0; i < allDetails.length; i++) {
-                // let isMatch = false;
                 if (allDetails[i].email == email && allDetails[i].password == password) {
                     window.location.href = "./rmmenu.html";
                 } else {
