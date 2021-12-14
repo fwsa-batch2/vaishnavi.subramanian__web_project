@@ -17,15 +17,16 @@
 
      let taskLength = list.length;
 
-     let list_1 = "";
+     let toBeAdded = "";
      for (i = 0; i < taskLength; i++) {
          let lists = list[i];
          let addList = "<tr><th><h3> " + lists + " </h3><img src='../assets/images/Cappucino.jpeg' width='250'></th><th><button>-</button><span id='add_count'> 3 </span><button onclick='added()'>+</button></th><th><h3>&#x20B9;130</h3></th><th><h3>&#x20B9;390</h3></th></tr>";
-         list_1 = list_1 + addList;
+         toBeAdded = toBeAdded + addList;
      }
 
      let table = document.getElementById("table");
-     table.innerHTML = list_1;
+     table.innerHTML = list;
+
  }
 
  onPageLoadHandler();

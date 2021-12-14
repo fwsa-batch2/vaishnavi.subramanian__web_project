@@ -9,11 +9,12 @@ function addCoffee(coffeeName) {
 }
 
 function onPageLoad() {
-    let allList = JSON.parse(localStorage.getItem("lists"));
+    let allList = JSON.parse(localStorage.getItem("coffeeLists"));
     if (allList) {
         list = allList;
     } else {
         list = [];
+        localStorage.setItem("coffeeLists", JSON.stringify([]));
     }
 }
 onPageLoad();

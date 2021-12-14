@@ -40,7 +40,7 @@ function submitHandler() {
     localStorage.setItem("details", detailsInString);
 
 
-    window.location.href = "./rmmenu.html";
+    window.location.href = "./login.html";
 
 
 }
