@@ -1,14 +1,5 @@
 let details = [];
 
-function onPageLoad() {
-    let parse = JSON.parse(localStorage.getItem("details"));
-    if (parse != null) {
-        details = parse;
-    }
-    return details;
-}
-
-onPageLoad();
 
 function submitHandler() {
     event.preventDefault();
@@ -32,7 +23,7 @@ function submitHandler() {
         }
     }
     if (isEmailAlreadyExist) {
-        alert("Sorry ! This mail id already exists");
+        document.getElementById("error").innerText = "Sorry ! This mail id already exists";
         return;
     }
 
@@ -53,6 +44,19 @@ function submitHandler() {
 
 
 }
+
+function onPageLoad() {
+    let parse = JSON.parse(localStorage.getItem("details"));
+    if (parse != null) {
+        details = parse;
+    } else {
+        details = [];
+        localStorage.setItem("details", JSON.stringify([]));
+    }
+    return details;
+}
+
+onPageLoad();
 
 
 function showPwd() {

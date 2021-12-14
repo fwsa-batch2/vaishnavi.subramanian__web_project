@@ -23,7 +23,7 @@ body {
 
 .div-1 {
     background-color: rgb(19, 18, 18);
-    height: 500px;
+    height: 505px;
     width: 810px;
     text-align: center;
     margin-left: 510px;
@@ -49,7 +49,7 @@ body {
 }
 
 button {
-    margin-top: 5%;
+    margin-top: 0%;
     font-size: medium;
     color: white;
     background-color: black;
@@ -62,7 +62,7 @@ button:hover {
 }
 
 #input-3 {
-    margin-top: 7%;
+    margin-top: 5%;
 }
 
 .label-1 {
@@ -77,4 +77,13 @@ button:hover {
 
 .showPassword {
     font-size: medium;
+}
+
+#error {
+    margin-top: 4%;
+    font-size: large;
+}
+
+#showPassword {
+    margin-left: -2%;
 }

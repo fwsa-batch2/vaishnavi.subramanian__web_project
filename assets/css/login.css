@@ -24,7 +24,7 @@ body {
 .div-1 {
     background-color: black;
     color: white;
-    height: 260px;
+    height: 285px;
     width: 600px;
     text-align: center;
     margin-left: 650px;
@@ -38,17 +38,19 @@ body {
     padding: 9%;
 }
 
-input {
+.input-1 {
     width: 68%;
     height: 8%;
 }
 
 .input-2 {
+    width: 68%;
+    height: 8%;
     margin-top: 10%;
 }
 
 button {
-    margin-top: 12%;
+    margin-top: 2%;
     font-size: medium;
 }
 
@@ -64,4 +66,17 @@ button:hover {
 
 a {
     text-decoration: none;
+}
+
+.pw {
+    font-size: medium;
+}
+
+#error {
+    font-size: large;
+    margin-top: 7%;
+}
+
+#showPassword {
+    margin-left: -12%;
 }
