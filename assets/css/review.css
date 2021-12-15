@@ -30,7 +30,7 @@ article {
     color: white;
 }
 
-a {
+.a {
     margin-left: 5%;
     text-decoration: none;
     color: white;
@@ -44,4 +44,14 @@ a {
 .input {
     margin-left: 22%;
     font-size: 1em;
+}
+
+#review {
+    margin-left: 5%;
+    color: rgb(87, 69, 69);
+    text-decoration: none;
+    font-size: 1.5em;
+    background-color: rgb(197, 191, 191);
+    border-radius: 30px;
+    padding: 0.4%;
 }

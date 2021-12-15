@@ -1,0 +1,63 @@
+body {
+    background-image: url('../images/wall2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.now {
+    text-align: center;
+    color: white;
+}
+
+.a {
+    margin-left: 5%;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+.rm {
+    margin-left: 25%;
+}
+
+form {
+    color: white;
+}
+
+fieldset {
+    padding-left: 30px;
+    border: 5px solid white;
+    width: 40%;
+    height: 39%;
+    margin-top: 200px;
+    margin-left: 530px;
+}
+
+input {
+    margin: 2%;
+}
+
+legend {
+    font-size: xx-large;
+}
+
+label {
+    font-size: x-large;
+    padding-top: 10%;
+    margin-top: 10%;
+}
+
+input {
+    width: 66%;
+}
+
+button {
+    margin-top: 3%;
+    margin-left: 38%;
+    font-size: larger;
+    background-color: white;
+    color: black;
+    padding: 1%;
+    border-radius: 20px;
+}

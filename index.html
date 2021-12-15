@@ -12,11 +12,11 @@
     <div>
         <h1 class="now">R&M Cafe</h1>
         <span class="cafe">
-        <a href="./index.html">Home</a>
-        <a href="#">Menu</a>
-        <a href="#">Review</a>
-        <a href="./pages/rmcontact.html">Contact</a>
-        <a href="#">Cart</a>
+        <a href="./index.html" id="home">Home</a>
+        <a href="#" class="a">Menu</a>
+        <a href="#" class="a">Review</a>
+        <a href="./pages/rmcontact.html" class="a">Contact</a>
+        <a href="#" class="a">Cart</a>
       </span>
     </div><br>
     <hr>
@@ -25,11 +25,19 @@
 
     <h2 class="h2">R&M Cafe</h2>
     <h2 class="h22">#COFFEE IS ALL ABOUT CHOICE</h2>
-    <button class="login"><a href="./pages/login.html">Login</a></button>
+    <button class="login" onclick="login()">Login</button>
     <br><br>
-    <button class="register"><a href="./pages/signup.html">Register</a></button>
+    <button class="register">Register</button>
 
+    <script>
+        function login() {
+            window.location.href = "./pages/login.html"
+        }
 
+        function register() {
+            window.location.href = "./pages/signup.html"
+        }
+    </script>
 </body>
 
 </html>

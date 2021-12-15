@@ -10,7 +10,7 @@ body {
     color: white;
 }
 
-a {
+.a {
     margin-left: 5%;
     text-decoration: none;
     color: white;
@@ -37,13 +37,14 @@ img {
     width: 220px;
 }
 
-.order {
-    background-color: rgb(39, 36, 36);
-    margin-left: 1470px;
-    height: 31px;
-    width: 175px;
-    font-size: 100%;
-    padding-bottom: 1.8%;
+#cart {
+    margin-left: 5%;
+    color: rgb(87, 69, 69);
+    text-decoration: none;
+    font-size: 1.5em;
+    background-color: rgb(197, 191, 191);
+    border-radius: 30px;
+    padding: 0.4%;
 }
 
 
@@ -148,4 +149,15 @@ img {
     margin-top: 390px;
     margin-left: 1470px;
     color: white;
+}
+
+button {
+    background-color: rgb(39, 36, 36);
+    color: white;
+    text-decoration: none;
+    margin-left: 1470px;
+    height: 31px;
+    width: 175px;
+    font-size: x-large;
+    padding-bottom: 1.8%;
 }

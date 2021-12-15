@@ -10,7 +10,7 @@ body {
     color: white;
 }
 
-a {
+.a {
     margin-left: 5%;
     text-decoration: none;
     color: white;
@@ -57,4 +57,38 @@ h1 {
 
 button {
     padding: 2px 32px;
+}
+
+#menu {
+    margin-left: 5%;
+    color: rgb(87, 69, 69);
+    text-decoration: none;
+    font-size: 1.5em;
+    background-color: rgb(197, 191, 191);
+    border-radius: 30px;
+    padding: 0.4%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.up {
+    /* margin-left: 90%; */
+    /* height: 5%;
+    width: 3%; */
+    background-color: wheat;
+    color: black;
+    border-radius: 80px;
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+}
+
+.divup {
+    border: 1px solid black;
+    width: 12%;
+    height: 5%;
+    margin-left: 90%;
+    position: relative;
 }
