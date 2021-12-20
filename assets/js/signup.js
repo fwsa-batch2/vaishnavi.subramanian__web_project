@@ -1,4 +1,4 @@
-let details = [];
+let toBeAdded = [];
 
 
 function submitHandler() {
@@ -34,9 +34,9 @@ function submitHandler() {
         "password": password
     }
 
-    details.push(userDetail);
+    toBeAdded.push(userDetail);
 
-    const detailsInString = JSON.stringify(details);
+    const detailsInString = JSON.stringify(toBeAdded);
     localStorage.setItem("details", detailsInString);
 
 
@@ -48,12 +48,12 @@ function submitHandler() {
 function onPageLoad() {
     let parse = JSON.parse(localStorage.getItem("details"));
     if (parse != null) {
-        details = parse;
+        toBeAdded = parse;
     } else {
-        details = [];
+        toBeAdded = [];
         localStorage.setItem("details", JSON.stringify([]));
     }
-    return details;
+    return toBeAdded;
 }
 
 onPageLoad();
