@@ -15,7 +15,7 @@ function submitHandler() {
 
     let isEmailAlreadyExist = false;
 
-    for (i = 0; i < array.length; i++) {
+    for (let i = 0; i < array.length; i++) {
         let a = array[i].email;
         if (email == a) {
             isEmailAlreadyExist = true;

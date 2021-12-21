@@ -63,9 +63,6 @@ function addToCart() {
     let imgUrl = document.getElementById("img").src;
     let price = document.getElementById("price").innerText;
 
-    let parsed = JSON.parse(localStorage.getItem("toBeAdded"));
-
-    // for (let i = 0; i < parsed.length; i++)
 
     let cart = {
         "coffeeName": coffeeName,
@@ -76,6 +73,22 @@ function addToCart() {
     console.log(cart);
     list.push(cart);
     localStorage.setItem("cart", JSON.stringify(cart));
+
+    // let parsedMenu = JSON.parse(localStorage.getItem("toBeAdded"));
+
+    // for (let i = 0; i < parsedMenu.length; i++) {
+    //     let a = parsedMenu[i];
+    //     let cart = {
+    //         "coffeeName": a.coffeeName,
+    //         "imageUrl": a.imageUrl,
+    //         "price": a.price,
+    //     }
+
+    //     console.log(cart);
+    //     list.push(cart);
+    //     localStorage.setItem("cart", JSON.stringify(cart));
+    //     break;
+    // }
 }
 
 function onLoad() {
@@ -83,8 +96,7 @@ function onLoad() {
     if (items != null) {
         list = items;
     } else {
-        list = [];
-        localStorage.setItem("coffeeLists", JSON.stringify(list));
+        localStorage.setItem("cart", JSON.stringify([]));
     }
     return list;
 }
