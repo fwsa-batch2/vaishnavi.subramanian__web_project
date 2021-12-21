@@ -28,8 +28,7 @@ function submitHandler() {
 
     console.groupEnd();
 
-    window.location.href = "./../pages/rmmenu.html"
-
+    window.location.href = "./../../pages/rmmenu.html"
 }
 
 function onPageLoad() {

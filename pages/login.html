@@ -14,7 +14,7 @@
             <a class="a-1" href="../index.html" >Home</a>
             <a class="a-1" href="#" >Menu</a>
             <a class="a-1" href="#" >Review</a>
-            <a class="a-1" href="./rmcontact.html" >Contact</a>
+            <a class="a-1" href="#" >Contact</a>
             <a class="a-1" href="#" >Cart</a>
         </span>
     </div>
@@ -24,8 +24,8 @@
 
     <div class="div-1">
         <form class="form" onsubmit="submitHandler()">
-            <label>Email:</label> <input type="text" class="input-1" id="email" required> <br>
-            <label>Password:</label> <input type="password" class="input-2" id="password" required> <br>
+            <label>Email:</label> <input type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="input-1" id="email" required> <br>
+            <label>Password:</label> <input type="password" pattern=".{8,15}" class="input-2" id="password" required> <br>
             <input type="checkbox" id="showPassword" onchange="showPwd()"><label class="pw">Show password</label><br>
             <div id="error">
 
@@ -70,8 +70,6 @@
             let parsedDetails = JSON.parse(localStorage.getItem("details"));
             console.log(parsedDetails);
             return parsedDetails;
-
-
         }
 
         function showPwd() {
