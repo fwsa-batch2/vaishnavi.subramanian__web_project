@@ -128,11 +128,11 @@ a {
 }
 
 .button_cart {
-    border: rgb(102, 23, 46) solid 2px;
+    border: rgb(211, 167, 71) solid 2px;
     margin-left: 12%;
     margin-top: 0px;
-    background-color: white;
-    color: rgb(102, 23, 46);
+    background-color: black;
+    color: rgb(211, 167, 71);
     height: 40px;
     width: 121px;
     border-radius: 30px;

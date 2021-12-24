@@ -35,3 +35,47 @@
  function placeOrder() {
      window.location.href = "./rmpayment.html"
  }
+
+
+ const parsed = JSON.parse(localStorage.getItem("cart"));
+ console.log(parsed);
+
+
+
+ function extractCoffee(items) {
+     let vcbl = "";
+     for (let i = 0; i < items.length; i++) {
+         let a = items[i];
+         let coffees = `  
+              <tr>
+                  <td>
+                                        
+                    <img src="${a.image}" alt="img" class="coffee_image">
+                    <p class="coffee_name">${a.name}</p>
+                  </td>
+                  <td class="coffee_quantity">
+                    ${a.quantity}
+                  </td>
+                  <td class="coffee_price">
+                    ₹ ${a.price}
+                  </td>
+                  <td class="coffee_total">
+                    ₹ ${a.price}
+                  </td>
+              </tr>
+              `;
+         vcbl = vcbl + coffees;
+     }
+     document.getElementById("table").innerHTML = vcbl;
+
+     let totOrder = `
+                <p class="tot">Total = ₹1000</p>
+                <hr>
+                <button class="order" onclick="placeOrder()">Place Order</button>
+
+                 `
+     document.getElementById("tot_order").innerHTML = totOrder;
+ }
+
+ const items = JSON.parse(localStorage.getItem("cart"));
+ extractCoffee(items);

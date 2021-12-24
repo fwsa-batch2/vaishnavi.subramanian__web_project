@@ -33,10 +33,6 @@ body {
     border-bottom: 1px solid;
 }
 
-img {
-    width: 220px;
-}
-
 #cart {
     margin-left: 5%;
     color: rgb(87, 69, 69);
@@ -142,13 +138,7 @@ img {
 } */
 
 .hr-1 {
-    margin-top: -440px;
-}
-
-.bad {
-    margin-top: 390px;
-    margin-left: 1470px;
-    color: white;
+    margin-top: -1330px;
 }
 
 button {
@@ -160,4 +150,42 @@ button {
     width: 175px;
     font-size: x-large;
     padding-bottom: 1.8%;
+}
+
+.coffee_name {
+    font-style: oblique;
+    float: left;
+    margin-top: 8%;
+    margin-left: 3%;
+    font-size: larger;
+}
+
+.coffee_image {
+    height: 90px;
+    width: 90px;
+    float: left;
+    border: black solid 2px;
+    margin-left: 17%;
+    margin-top: 3%;
+}
+
+.coffee_quantity {
+    text-align: center;
+    font-size: larger;
+}
+
+.coffee_price {
+    text-align: center;
+    font-size: larger;
+}
+
+.coffee_total {
+    text-align: center;
+    font-size: larger;
+}
+
+.tot {
+    font-size: x-large;
+    color: white;
+    margin-left: 81%;
 }

@@ -1,14 +1,15 @@
-function onPageLoad() {
-    let allList = JSON.parse(localStorage.getItem("coffeeLists"));
-    if (allList != null) {
-        list = allList;
-    } else {
-        list = [];
-        localStorage.setItem("coffeeLists", JSON.stringify(list));
-    }
-    return list;
-}
-onPageLoad();
+// function onPageLoad() {
+//     let allList = JSON.parse(localStorage.getItem("coffeeLists"));
+//     if (allList != null) {
+//         list = allList;
+//     } else {
+//         list = [];
+//         localStorage.setItem("coffeeLists", JSON.stringify(list));
+//     }
+//     return list;
+// }
+
+
 
 function renderCoffee(coffeeList) {
 
@@ -22,20 +23,20 @@ function renderCoffee(coffeeList) {
             <tr>    
                 <div>
                     <h1 class="coffee_name" id="coffeeName">
-                        ${ a.coffeeName }
+                        ${a.coffeeName}
                     </h1>
                 </div>
                 <div>
-                    <img src="${ a.imageUrl }" class="coffee_image" id="img" alt="">
+                    <img src="${a.imageUrl}" class="coffee_image" id="img" alt="">
 
                     <span>
                         <p class="coffee_description">
-                            ${ a.description }   
+                            ${a.description}   
                         </p>
                         <p class="coffee_price" id="price">
-                            ${ "₹" + a.price }
+                            ₹ ${a.price}
                         </p>
-                        <button onclick="addToCart()" class="button_cart">
+                        <button data-coffee="${a.coffeeName}" onclick="addToCart()" class="button_cart">
                             Add to cart
                         </button>
                     </span>
@@ -47,48 +48,32 @@ function renderCoffee(coffeeList) {
         add = add + coffee;
     }
     document.getElementById("coffeeList").innerHTML = add;
-
 }
 
-let parsed = JSON.parse(localStorage.getItem("toBeAdded"));
-console.table(parsed);
-renderCoffee(parsed);
-
-
-
 function addToCart() {
-    let list = [];
 
-    let coffeeName = document.getElementById("coffeeName").innerText;
-    let imgUrl = document.getElementById("img").src;
-    let price = document.getElementById("price").innerText;
+    const data_coffee = event.target.dataset.coffee;
+    console.log(data_coffee);
 
+    const coffeeObject = parsed.find(item => item.coffeeName === data_coffee);
+    console.log(coffeeObject);
 
-    let cart = {
-        "coffeeName": coffeeName,
-        "imageUrl": imgUrl,
-        "price": price,
+    const cartItem = {
+        name: coffeeObject.coffeeName,
+        image: coffeeObject.imageUrl,
+        price: coffeeObject.price,
+        quantity: 1
+    }
+
+    let cart = JSON.parse(localStorage.getItem("cart"));
+    if (cart == null) {
+        cart = [];
     }
 
     console.log(cart);
-    list.push(cart);
+    cart.push(cartItem);
     localStorage.setItem("cart", JSON.stringify(cart));
-
-    // let parsedMenu = JSON.parse(localStorage.getItem("toBeAdded"));
-
-    // for (let i = 0; i < parsedMenu.length; i++) {
-    //     let a = parsedMenu[i];
-    //     let cart = {
-    //         "coffeeName": a.coffeeName,
-    //         "imageUrl": a.imageUrl,
-    //         "price": a.price,
-    //     }
-
-    //     console.log(cart);
-    //     list.push(cart);
-    //     localStorage.setItem("cart", JSON.stringify(cart));
-    //     break;
-    // }
+    window.location.href = "./cart.html"
 }
 
 function onLoad() {
@@ -100,4 +85,10 @@ function onLoad() {
     }
     return list;
 }
+
+
+// onPageLoad();
+const parsed = JSON.parse(localStorage.getItem("toBeAdded"));
+console.table(parsed);
+renderCoffee(parsed);
 onLoad();

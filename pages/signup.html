@@ -22,7 +22,7 @@
     <hr>
 
     <div class="div-1">
-        <form class="form" onsubmit="submitHandler()">
+        <form class="form" onsubmit="submitHandler(event)">
             Full Name:
             <input type="text" class="input-1" pattern="[A-Za-z]+" minlength="3" maxlength="20" id="fullName" required>
             <br> Phone Number:<input type="tel" pattern="[0-9]+" maxlength="10" minlength="10" class="input-2" id="phoneNumber" required>
@@ -35,17 +35,12 @@
             <label class="label-1">I agree to the<a href="./rmtc.html" class="a-2">terms and conditions</a>
                 </label><br>
 
-            <div id="error">
-
-            </div>
+            <div id="error"></div>
             <button type="submit">Register</button>
         </form>
     </div>
 
-
-
-    <script src="./../assets/js/signup.js">
-    </script>
+    <script src="./../assets/js/signup.js"></script>
 
 </body>
 

@@ -1,7 +1,7 @@
 let toBeAdded = [];
 
 
-function submitHandler() {
+function submitHandler(event) {
     event.preventDefault();
     const username = document.getElementById("fullName").value;
     const contact = document.getElementById("phoneNumber").value;
@@ -61,7 +61,7 @@ onPageLoad();
 
 function showPwd() {
     const pass = document.getElementById("showPassword");
-    if (pass.checked == true) {
+    if (pass.checked) {
         document.getElementById("password").type = "text";
     } else {
         document.getElementById("password").type = "password";
