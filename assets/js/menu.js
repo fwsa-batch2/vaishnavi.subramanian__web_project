@@ -1,16 +1,3 @@
-// function onPageLoad() {
-//     let allList = JSON.parse(localStorage.getItem("coffeeLists"));
-//     if (allList != null) {
-//         list = allList;
-//     } else {
-//         list = [];
-//         localStorage.setItem("coffeeLists", JSON.stringify(list));
-//     }
-//     return list;
-// }
-
-
-
 function renderCoffee(coffeeList) {
 
 
@@ -58,11 +45,13 @@ function addToCart() {
     const coffeeObject = parsed.find(item => item.coffeeName === data_coffee);
     console.log(coffeeObject);
 
+    let numberOfQuantity = parseFloat(prompt("Enter the number of quantity"));
+
     const cartItem = {
         name: coffeeObject.coffeeName,
         image: coffeeObject.imageUrl,
-        price: coffeeObject.price,
-        quantity: 1
+        price: (coffeeObject.price),
+        quantity: numberOfQuantity
     }
 
     let cart = JSON.parse(localStorage.getItem("cart"));
@@ -87,7 +76,7 @@ function onLoad() {
 }
 
 
-// onPageLoad();
+
 const parsed = JSON.parse(localStorage.getItem("toBeAdded"));
 console.table(parsed);
 renderCoffee(parsed);

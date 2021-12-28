@@ -41,11 +41,14 @@
  console.log(parsed);
 
 
+ let total = 0;
 
  function extractCoffee(items) {
      let vcbl = "";
      for (let i = 0; i < items.length; i++) {
          let a = items[i];
+         let totalPrice = a.price * a.quantity;
+         total += parseFloat(totalPrice);
          let coffees = `  
               <tr>
                   <td>
@@ -60,7 +63,7 @@
                     ₹ ${a.price}
                   </td>
                   <td class="coffee_total">
-                    ₹ ${a.price}
+                    ₹ ${totalPrice}
                   </td>
               </tr>
               `;
@@ -69,7 +72,7 @@
      document.getElementById("table").innerHTML = vcbl;
 
      let totOrder = `
-                <p class="tot">Total = ₹1000</p>
+                <p class="tot">Total = ₹ ${total}</p>
                 <hr>
                 <button class="order" onclick="placeOrder()">Place Order</button>
 

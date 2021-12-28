@@ -141,17 +141,6 @@ body {
     margin-top: -1330px;
 }
 
-button {
-    background-color: rgb(39, 36, 36);
-    color: white;
-    text-decoration: none;
-    margin-left: 1470px;
-    height: 31px;
-    width: 175px;
-    font-size: x-large;
-    padding-bottom: 1.8%;
-}
-
 .coffee_name {
     font-style: oblique;
     float: left;
@@ -187,5 +176,16 @@ button {
 .tot {
     font-size: x-large;
     color: white;
-    margin-left: 81%;
+    margin-left: 80%;
+}
+
+.order {
+    background-color: rgb(39, 36, 36);
+    color: white;
+    text-decoration: none;
+    margin-left: 1470px;
+    height: 31px;
+    width: 175px;
+    font-size: x-large;
+    padding-bottom: 1.8%;
 }
