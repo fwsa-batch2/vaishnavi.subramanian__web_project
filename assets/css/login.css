@@ -75,6 +75,7 @@ a {
 #error {
     font-size: large;
     margin-top: 7%;
+    color: red;
 }
 
 #showPassword {

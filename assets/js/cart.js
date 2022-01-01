@@ -57,7 +57,9 @@
                     <p class="coffee_name">${a.name}</p>
                   </td>
                   <td class="coffee_quantity">
-                    ${a.quantity}
+                    <button onclick="minus('qnty${JSON.stringify(i+1)}')"> - </button> 
+                    <span id="qnty${JSON.stringify(i+1)}">1</span>
+                    <button onclick="plus('qnty${JSON.stringify(i+1)}')"> + </button> 
                   </td>
                   <td class="coffee_price">
                     ₹ ${a.price}
@@ -82,3 +84,16 @@
 
  const items = JSON.parse(localStorage.getItem("cart"));
  extractCoffee(items);
+
+ let num = 1;
+ document.getElementById(x).innerText = num;
+
+ function minus(x) {
+     num = num - 1;
+     document.getElementById(x).innerText = num;
+ }
+
+ function plus(x) {
+     num = num + 1;
+     document.getElementById(x).innerText = num;
+ }

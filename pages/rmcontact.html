@@ -22,24 +22,24 @@
 
     <h1 class="new"><em>Contact Us</em></h1>
     <div class="div">
-        <form>
+        <form onsubmit="onSubmit()">
 
             <table class="table">
                 <caption></caption>
                 <th id="empty"></th>
                 <tr>
                     <td>Name</td>
-                    <td><input type="text" name="name" placeholder="Enter your name" required></td>
+                    <td><input type="text" name="name" pattern="[A-Za-z]+" minlength="3" maxlength="20" placeholder="Enter your name" required></td>
                 </tr>
 
                 <tr>
                     <td>Email Id</td>
-                    <td><input type="email" name="email" placeholder="Enter your Email Id" required></td>
+                    <td><input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" placeholder="Enter your Email Id" required></td>
                 </tr>
 
                 <tr>
                     <td>Phone Number</td>
-                    <td><input type="text" name="phone" placeholder="Enter your mobile number" required></td>
+                    <td><input type="tel" name="phone" pattern="[0-9]+" maxlength="10" minlength="10" placeholder="Enter your mobile number" required></td>
                 </tr>
 
                 <tr>
@@ -61,6 +61,11 @@
             <p>R&M Cafe Inc. &copy; All rights reserved (2021)</p>
         </div>
     </footer>
+    <script>
+        function onSubmit() {
+            alert("Your query has been submitted successfully.We will reach out to you soon.")
+        }
+    </script>
 </body>
 
 </html>

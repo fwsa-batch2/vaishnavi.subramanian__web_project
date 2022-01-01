@@ -75,10 +75,18 @@ button:hover {
     padding: 0.4%;
 }
 
-p {
+
+/* .footer {
     background-color: black;
     color: white;
     cursor: pointer;
     margin-top: 100px;
-    margin-bottom: 0px;
+    padding-bottom: -40px;
+} */
+
+.footer {
+    background-color: black;
+    color: white;
+    margin-top: 132px;
+    padding-left: 1445px;
 }
