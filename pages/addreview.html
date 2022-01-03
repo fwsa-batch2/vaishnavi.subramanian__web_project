@@ -1,0 +1,36 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R&M Cafe</title>
+    <link rel="stylesheet" href="./../assets/css/addreview.css">
+</head>
+
+<body>
+    <div>
+        <h1 class="now">R&M Cafe</h1>
+        <span class="rm">
+        <a href="../index.html" class="a">Home</a>
+        <a href="./rmmenu.html" class="a">Menu</a>
+        <a href="./rmreview.html" class="a">Review</a>
+        <a href="./rmcontact.html" class="a">Contact</a>
+        <a href="./cart.html" class="a">Cart</a>
+   </span>
+    </div>
+    <br>
+    <hr>
+    <div>
+        <form class="form" onsubmit="submitHandler()">
+            <input type="text" class="profile" id="name" placeholder="Enter your name" required>
+            <textarea name="comment" class="comment" id="feedback" cols="30" rows="10" placeholder="Add your feedback.." required></textarea>
+            <button type="reset" class="cancel">Cancel</button>
+            <button type="submit" class="post">Post</button>
+        </form>
+    </div>
+
+    <script src="./../assets/js/addreview.js"></script>
+</body>
+
+</html>

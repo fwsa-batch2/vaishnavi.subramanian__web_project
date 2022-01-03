@@ -28,7 +28,7 @@ function submitHandler() {
 
     console.groupEnd();
 
-    window.location.href = "./../../pages/rmmenu.html"
+    window.location.href = "./../pages/rmmenu.html"
 }
 
 function onPageLoad() {
@@ -38,7 +38,6 @@ function onPageLoad() {
         toBeAdded = parse;
         console.log(toBeAdded);
     } else {
-        toBeAdded = [];
         localStorage.setItem("toBeAdded", JSON.stringify([]));
     }
 

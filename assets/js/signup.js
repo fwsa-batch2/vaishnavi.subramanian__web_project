@@ -50,7 +50,6 @@ function onPageLoad() {
     if (parse != null) {
         toBeAdded = parse;
     } else {
-        toBeAdded = [];
         localStorage.setItem("details", JSON.stringify([]));
     }
     return toBeAdded;
