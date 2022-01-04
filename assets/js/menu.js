@@ -14,8 +14,8 @@ function renderCoffee(coffeeList) {
                     </h1>
                 </div>
                 <div>
-                    <img src="${a.imageUrl}" class="coffee_image" id="img" alt="">
 
+                    <img src="${a.imageUrl}" class="coffee_image" id="img" alt="">
                     <span>
                         <p class="coffee_description">
                             ${a.description}   
