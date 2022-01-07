@@ -1,3 +1,5 @@
+let cart = [];
+
 function renderCoffee(coffeeList) {
 
 
@@ -62,7 +64,7 @@ function addToCart(event) {
 function onLoad() {
     let items = JSON.parse(localStorage.getItem("cart"));
     if (items != null) {
-        let cart = items;
+        cart = items;
     } else {
         localStorage.setItem("cart", JSON.stringify([]));
     }
