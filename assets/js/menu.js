@@ -62,7 +62,7 @@ function addToCart(event) {
 function onLoad() {
     let items = JSON.parse(localStorage.getItem("cart"));
     if (items != null) {
-        cart = items;
+        let cart = items;
     } else {
         localStorage.setItem("cart", JSON.stringify([]));
     }
