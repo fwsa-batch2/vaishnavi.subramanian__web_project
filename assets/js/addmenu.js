@@ -1,7 +1,7 @@
 let toBeAdded = [];
 
 
-function submitHandler() {
+function submitHandler(event) {
     event.preventDefault();
     console.group("submitHandler");
 

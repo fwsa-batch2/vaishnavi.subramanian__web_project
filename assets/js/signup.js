@@ -66,27 +66,3 @@ function showPwd() {
     }
 
 }
-
-// function validate() {
-//     let name = document.forms["form"]["name"].value;
-//     let number = document.forms["form"]["number"].value;
-//     let email = document.forms["form"]["mail"].value;
-//     let password = document.forms["form"]["password"].value;
-
-//     if (name.length < 3) {
-//         document.getElementById("fullName").innerHTML = "Name should contain atleast 3 or more characters"
-//     }
-//     if()
-
-// }
-
-function validate() {
-    let formname = document.getElementById("fullName").value;
-    let formnumber = document.getElementById("fullName").value;
-    let formemail = document.getElementById("fullName").value;
-    let formpassword = document.getElementById("fullName").value;
-    if (formname.length < 3) {
-        document.getElementById("fullName").innerHTML = "Name should contain atleast 3 or more characters"
-    }
-
-}

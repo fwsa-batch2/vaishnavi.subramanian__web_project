@@ -53,12 +53,6 @@ function addToCart(event) {
         price: (coffeeObject.price),
         quantity: numberOfQuantity
     }
-
-    let cart = JSON.parse(localStorage.getItem("cart"));
-    if (cart == null) {
-        cart = [];
-    }
-
     console.log(cart);
     cart.push(cartItem);
     localStorage.setItem("cart", JSON.stringify(cart));
