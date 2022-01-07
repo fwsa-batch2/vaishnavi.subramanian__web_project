@@ -73,3 +73,8 @@ td {
     border-radius: 30px;
     padding: 0.4%;
 }
+
+.hello {
+    background-color: black;
+    color: white;
+}

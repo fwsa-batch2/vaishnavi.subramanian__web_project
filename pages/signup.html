@@ -13,8 +13,8 @@
         <span class="rm">
                 <a href="../index.html" class="a-1">Home</a>
                 <a href="#" class="a-1">Menu</a>
-                <a href="#" class="a-1">Review</a>
-                <a href="#" class="a-1">Contact</a>
+                <a href="./rmreview.html" class="a-1">Review</a>
+                <a href="./rmcontact.html" class="a-1">Contact</a>
                 <a href="#" class="a-1">Cart</a>
             </span>
     </div>
@@ -22,13 +22,13 @@
     <hr>
 
     <div class="div-1">
-        <form class="form" onsubmit="submitHandler(event)">
+        <form class="form" name="form" onsubmit="submitHandler(event)">
             Full Name:
-            <input type="text" class="input-1" pattern="[A-Za-z]+" minlength="3" maxlength="20" id="fullName" required>
-            <br> Phone Number:<input type="tel" pattern="[0-9]+" maxlength="10" minlength="10" class="input-2" id="phoneNumber" required>
-            <br> Email Id:<input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="input-2" id="email" required>
+            <input type="text" name="name" minlength="3" maxlength="30" class="input-1" id="fullName" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" autofocus required>
+            <br> Phone Number:<input type="tel" name="number" pattern="[0-9]+" maxlength="10" minlength="10" class="input-2" id="phoneNumber" required>
+            <br> Email Id:<input type="email" name="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="input-2" id="email" required>
             <br> Set Password:
-            <input type="password" pattern=".{8,15}" class="input-2" id="password" required>
+            <input type="password" name="password" title="Password should contain atleast 8 characters" pattern=".{8,15}" class="input-2" id="password" required>
             <br>
             <input type="checkbox" name="checkbox" onchange="showPwd()" id="showPassword"><label class="showPassword">Show password</label><br>
             <input id="input-3" type="checkbox" name="t&c" required>

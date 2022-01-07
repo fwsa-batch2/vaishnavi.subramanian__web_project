@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>R&M Cafe</title>
-    <link rel="stylesheet" href="./../assets/css/adddrink.css">
+    <link rel="stylesheet" href="./../assets/css/addmenu.css">
+    <script src="./../assets/js/admincheck.js"></script>
 </head>
 
 <body>
@@ -28,7 +29,7 @@
             <fieldset>
                 <legend><strong><em>Fill in the details to add Coffee to menu</em></strong></legend>
                 <label class="coffee">Coffee Name :</label>
-                <input type="text" id="coffeeName" required><br>
+                <input type="text" id="coffeeName" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" autofocus required><br>
                 <label>Description :</label>
                 <textarea name="" id="description" cols="30" rows="10" required></textarea><br>
                 <label> Image url :</label>
@@ -39,7 +40,7 @@
             </fieldset>
         </form>
     </div>
-    <script src="./../assets/js/adddrink.js"></script>
+    <script src="./../assets/js/addmenu.js"></script>
 </body>
 
 </html>

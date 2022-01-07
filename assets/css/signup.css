@@ -48,7 +48,7 @@ body {
 }
 
 button {
-    margin-top: 0%;
+    margin-top: 1%;
     font-size: medium;
     color: white;
     background-color: black;
@@ -79,8 +79,9 @@ button:hover {
 }
 
 #error {
-    margin-top: 4%;
+    margin-top: 3%;
     font-size: large;
+    color: red;
 }
 
 #showPassword {

@@ -42,23 +42,22 @@
 
  let total = 0;
 
- function extractCoffee(items) {
+ function extractCoffee(items1) {
      let vcbl = "";
-     for (let i = 0; i < items.length; i++) {
-         let a = items[i];
-         let totalPrice = a.price * a.quantity;
+     for (let i of items1) {
+         let totalPrice = i.price * i.quantity;
          total += parseFloat(totalPrice);
          let coffees = `  
               <tr>
                   <td>                                
-                    <img src="${a.image}" alt="img" class="coffee_image">
-                    <p class="coffee_name">${a.name}</p>
+                    <img src="${i.image}" alt="img" class="coffee_image">
+                    <p class="coffee_name">${i.name}</p>
                   </td>
                   <td class="coffee_quantity">
-                    <span id="qnty">${a.quantity}</span> 
+                    <span id="qnty">${i.quantity}</span> 
                   </td>
                   <td class="coffee_price">
-                    ₹ ${a.price}
+                    ₹ ${i.price}
                   </td>
                   <td class="coffee_total">
                     ₹ ${totalPrice}
@@ -80,16 +79,3 @@
 
  const items = JSON.parse(localStorage.getItem("cart"));
  extractCoffee(items);
-
- //  let num = 1;
- //  document.getElementById(x).innerText = num;
-
- //  function minus(x) {
- //      num = num - 1;
- //      document.getElementById(x).innerText = num;
- //  }
-
- //  function plus(x) {
- //      num = num + 1;
- //      document.getElementById(x).innerText = num;
- //  }

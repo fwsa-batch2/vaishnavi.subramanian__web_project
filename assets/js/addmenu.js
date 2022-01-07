@@ -2,7 +2,7 @@ let toBeAdded = [];
 
 
 function submitHandler() {
-
+    event.preventDefault();
     console.group("submitHandler");
 
     const coffeeName = document.getElementById("coffeeName").value;
@@ -37,6 +37,7 @@ function onPageLoad() {
     if (parse != null) {
         toBeAdded = parse;
         console.log(toBeAdded);
+
     } else {
         localStorage.setItem("toBeAdded", JSON.stringify([]));
     }

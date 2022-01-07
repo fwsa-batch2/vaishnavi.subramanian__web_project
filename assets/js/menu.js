@@ -23,7 +23,7 @@ function renderCoffee(coffeeList) {
                         <p class="coffee_price" id="price">
                             ₹ ${a.price}
                         </p>
-                        <button data-coffee="${a.coffeeName}" onclick="addToCart()" class="button_cart">
+                        <button data-coffee="${a.coffeeName}" onclick="addToCart(event)" class="button_cart">
                             Add to cart
                         </button>
                     </span>
@@ -37,7 +37,7 @@ function renderCoffee(coffeeList) {
     document.getElementById("coffeeList").innerHTML = add;
 }
 
-function addToCart() {
+function addToCart(event) {
 
     const data_coffee = event.target.dataset.coffee;
     console.log(data_coffee);
@@ -68,11 +68,11 @@ function addToCart() {
 function onLoad() {
     let items = JSON.parse(localStorage.getItem("cart"));
     if (items != null) {
-        list = items;
+        cart = items;
     } else {
         localStorage.setItem("cart", JSON.stringify([]));
     }
-    return list;
+    return cart;
 }
 
 

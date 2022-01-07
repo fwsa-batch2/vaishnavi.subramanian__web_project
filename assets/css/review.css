@@ -43,6 +43,7 @@ body {
     height: 14vh;
     margin-left: 14%;
     border-radius: 9px;
+    overflow: scroll;
 }
 
 .profile_image {
@@ -68,56 +69,6 @@ body {
     float: inline-start;
     margin-left: -6.5%;
 }
-
-
-/* .form {
-    background-color: black;
-    width: 1820px;
-    opacity: 0.5;
-    margin-top: 290px;
-}
-
-.profile {
-    margin-top: 2%;
-    margin-bottom: 2%;
-    margin-left: 10%;
-    width: 66%;
-    height: 8%;
-    font-size: x-large;
-}
-
-.comment {
-    margin-left: 10%;
-    margin-bottom: 2%;
-    width: 66%;
-    height: 90px;
-    font-size: x-large;
-}
-
-.cancel {
-    background-color: black;
-    color: white;
-    font-size: x-large;
-    font-weight: bold;
-    width: 116px;
-    height: 55px;
-    margin-bottom: 2%;
-    float: left;
-    margin-left: 79%;
-    margin-top: -11%;
-}
-
-.post {
-    background-color: black;
-    color: white;
-    font-size: x-large;
-    font-weight: bold;
-    width: 116px;
-    height: 55px;
-    float: left;
-    margin-left: 79%;
-    margin-top: -6%;
-} */
 
 .sun {
     background-color: white;
@@ -149,8 +100,8 @@ body {
     color: black;
     margin-top: 6%;
     font-size: larger;
+    margin-left: -6%;
     float: inline-start;
-    margin-left: -6.5%;
 }
 
 .buttt {

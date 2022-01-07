@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -22,9 +23,9 @@
     <br>
     <hr>
     <div>
-        <form class="form" onsubmit="submitHandler()">
-            <input type="text" class="profile" id="name" placeholder="Enter your name" required>
-            <textarea name="comment" class="comment" id="feedback" cols="30" rows="10" placeholder="Add your feedback.." required></textarea>
+        <form class="form" onsubmit="submitHandler(event)">
+            <input type="text" class="profile" id="name" placeholder="Enter your name" title="Name should neither start with space nor be empty" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" minlength="3" maxlength="30" autofocus required>
+            <textarea name="comment" class="comment" id="feedback" cols="30" rows="5" placeholder="Add your feedback.." pattern="[A-Za-z]+" minlength="2" maxlength="200" required></textarea>
             <button type="reset" class="cancel">Cancel</button>
             <button type="submit" class="post">Post</button>
         </form>

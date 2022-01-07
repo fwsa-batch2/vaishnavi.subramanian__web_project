@@ -23,7 +23,7 @@ body {
 
 .form {
     background-color: black;
-    width: 1820px;
+    width: 100%;
     opacity: 0.5;
     margin-top: 290px;
 }
@@ -55,7 +55,7 @@ body {
     margin-bottom: 2%;
     float: left;
     margin-left: 79%;
-    margin-top: -11%;
+    margin-top: -10%;
 }
 
 .post {
@@ -67,5 +67,5 @@ body {
     height: 55px;
     float: left;
     margin-left: 79%;
-    margin-top: -6%;
+    margin-top: -5.5%;
 }
