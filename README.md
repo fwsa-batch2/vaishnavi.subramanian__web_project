@@ -40,7 +40,7 @@
 
 ### Add menu
 * Only admins can access this page.
-* Admin's email id - "vaishnavi@gmail.com" or "chitra@gmail.com" (register using this mail id to access this page for now).
+* Admin's email id - "vaishnavi@gmail.com"(register using this mail id and then login to access this page for now).
 * Four input fields are required (Coffee Name, coffee description, coffee image url,and coffee price).
 * After submitting, redirect to menu page.
 
