@@ -5,39 +5,54 @@ body {
     background-attachment: fixed;
 }
 
-.class1 {
-    margin-left: 39.2%;
-}
-
-.now {
-    margin-left: 47%;
+.cafe_name {
+    text-align: center;
     color: white;
 }
 
-.a {
+.navbar {
+    margin-left: 27%;
+}
+
+.nav_color {
+    margin-left: 5%;
+    color: rgb(87, 69, 69);
+    text-decoration: none;
+    font-size: 1.5em;
+    background-color: rgb(197, 191, 191);
+    border-radius: 30px;
+    padding: 0.4%;
+}
+
+.nav_static {
     margin-left: 5%;
     text-decoration: none;
     color: white;
     font-size: 1.5em;
 }
 
-.cafe {
-    margin-left: 25%;
+.line {
+    margin-top: 2%;
 }
 
-.h2 {
+.logo {
+    margin-left: 39.2%;
+    width: 400px;
+}
+
+.title {
     color: azure;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: xx-large;
 }
 
-.h22 {
+.caption {
     color: azure;
     text-align: center;
 }
 
-.login {
+.button_login {
     margin-left: 46%;
     width: 8%;
     height: 5%;
@@ -48,8 +63,9 @@ body {
     padding-bottom: 0.4%;
 }
 
-.register {
+.button_register {
     margin-left: 45%;
+    margin-top: 1%;
     width: 10%;
     height: 5%;
     font-size: xx-large;
@@ -63,30 +79,4 @@ button:hover {
     background-color: rgb(128, 89, 53);
     border-radius: 12vh;
     transition: 2s;
-}
-
-#home {
-    margin-left: 5%;
-    color: rgb(87, 69, 69);
-    text-decoration: none;
-    font-size: 1.5em;
-    background-color: rgb(197, 191, 191);
-    border-radius: 30px;
-    padding: 0.4%;
-}
-
-
-/* .footer {
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    margin-top: 100px;
-    padding-bottom: -40px;
-} */
-
-.footer {
-    background-color: black;
-    color: white;
-    margin-top: 132px;
-    padding-left: 1445px;
 }

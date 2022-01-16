@@ -1,53 +1,11 @@
- let list = [];
+let total = 0;
 
-
- function onPageLoadHandler() {
-
-     const cartInString = localStorage.getItem("lists");
-     const cartItems = JSON.parse(cartInString);
-
-     if (cartItems) {
-         list = cartItems;
-     }
-
-     renderCart();
- }
-
- function renderCart() {
-
-     let taskLength = list.length;
-
-     let toBeAdded = "";
-
-     for (let i = 0; i < taskLength; i++) {
-         let lists = list[i];
-         let addList = "<tr><th><h3> " + lists + " </h3><img src='../assets/images/Cappucino.jpeg' width='250'></th><th><button>-</button><span id='add_count'> 3 </span><button onclick='added()'>+</button></th><th><h3>&#x20B9;130</h3></th><th><h3>&#x20B9;390</h3></th></tr>";
-         toBeAdded = toBeAdded + addList;
-     }
-
-     let table = document.getElementById("table");
-     table.innerHTML = toBeAdded;
-
- }
-
- onPageLoadHandler();
-
- function placeOrder() {
-     window.location.href = "./rmpayment.html"
- }
-
-
- const parsed = JSON.parse(localStorage.getItem("cart"));
- console.log(parsed);
-
- let total = 0;
-
- function extractCoffee(items1) {
-     let vcbl = "";
-     for (let i of items1) {
-         let totalPrice = i.price * i.quantity;
-         total += parseFloat(totalPrice);
-         let coffees = `  
+function extractCoffee(items1) {
+    let vcbl = "";
+    for (let i of items1) {
+        let totalPrice = i.price * i.quantity;
+        total += parseFloat(totalPrice);
+        let coffees = `  
               <tr>
                   <td>                                
                     <img src="${i.image}" alt="img" class="coffee_image">
@@ -64,18 +22,18 @@
                   </td>
               </tr>
               `;
-         vcbl = vcbl + coffees;
-     }
-     document.getElementById("table").innerHTML = vcbl;
+        vcbl = vcbl + coffees;
+    }
+    document.getElementById("table").innerHTML = vcbl;
 
-     let totOrder = `
+    let totOrder = `
                 <p class="tot">Total = ₹ ${total}</p>
                 <hr>
                 <button class="order" onclick="placeOrder()">Place Order</button>
 
                  `
-     document.getElementById("tot_order").innerHTML = totOrder;
- }
+    document.getElementById("tot_order").innerHTML = totOrder;
+}
 
- const items = JSON.parse(localStorage.getItem("cart"));
- extractCoffee(items);
+const items = JSON.parse(localStorage.getItem("cart"));
+extractCoffee(items);

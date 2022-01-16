@@ -5,23 +5,27 @@ body {
     background-attachment: fixed;
 }
 
-.now {
-    margin-left: 47%;
+.cafe_name {
+    text-align: center;
     color: white;
 }
 
-.a-1 {
+.navbar {
+    margin-left: 27%;
+}
+
+.nav_static {
     margin-left: 5%;
     text-decoration: none;
     color: white;
     font-size: 1.5em;
 }
 
-.rm {
-    margin-left: 25%;
+.line {
+    margin-top: 2%;
 }
 
-.div-1 {
+.div_form {
     background-color: rgb(19, 18, 18);
     height: 505px;
     width: 810px;
@@ -33,18 +37,22 @@ body {
     color: white;
 }
 
-.form {
+.form_details {
     font-size: x-large;
     padding: 9%;
 }
 
-.input-1 {
+.input_name {
     width: 58%;
 }
 
-.input-2 {
+.input_ph_mail_pw {
     margin-top: 8%;
     width: 50%;
+}
+
+.input_checkbox {
+    margin-top: 5%;
 }
 
 button {
@@ -60,15 +68,11 @@ button:hover {
     color: black;
 }
 
-#input-3 {
-    margin-top: 5%;
-}
-
-.label-1 {
+.terms {
     font-size: medium;
 }
 
-.a-2 {
+.conditions {
     font-size: medium;
     margin-left: 1%;
     color: white;
@@ -78,12 +82,12 @@ button:hover {
     font-size: medium;
 }
 
+#showPassword {
+    margin-left: -2%;
+}
+
 #error {
     margin-top: 3%;
     font-size: large;
     color: red;
-}
-
-#showPassword {
-    margin-left: -2%;
 }

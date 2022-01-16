@@ -8,26 +8,26 @@
 </head>
 
 <body>
-    <div>
-        <h1 class="now">R&M Cafe</h1>
-        <span class="rm">
-            <a class="a-1" href="../index.html" >Home</a>
-            <a class="a-1" href="#" >Menu</a>
-            <a class="a-1" href="./rmreview.html" >Review</a>
-            <a class="a-1" href="./rmcontact.html" >Contact</a>
-            <a class="a-1" href="#" >Cart</a>
-        </span>
+
+    <h1 class="cafe_name">R&M Cafe</h1>
+    <div class="navbar">
+        <a class="nav_static" href="../index.html">Home</a>
+        <a class="nav_static" href="#">Menu</a>
+        <a class="nav_static" href="./rmreview.html">Review</a>
+        <a class="nav_static" href="./rmcontact.html">Contact</a>
+        <a class="nav_static" href="#">Cart</a>
     </div>
 
-    <br>
-    <hr>
+    <hr class="line">
 
-    <div class="div-1">
-        <form class="form" onsubmit="submitHandler()">
-            <label>Email:</label> <input type="text" title="Please enter a valid email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="input-1" id="email" required> <br>
-            <label>Password:</label> <input type="password" class="input-2" id="password" required> <br>
-            <input type="checkbox" id="showPassword" onchange="showPwd()"><label class="pw">Show password</label><br>
-            <div id="error">
+    <div class="form_div">
+        <form class="details_form" onsubmit="submitHandler(event)">
+            Email:
+            <input type="text" class="input_email" id="email" title="Please enter a valid email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autofocus required> Password:
+            <input type="password" class="input_password" id="password" autofocus required>
+            <br>
+            <input type="checkbox" id="showPassword" onchange="showPwd()"><label class="show_password">Show password</label>
+            <div id="error_message">
 
             </div>
             <button type="submit">Login</button>
@@ -35,14 +35,14 @@
     </div>
 
     <script>
-        function submitHandler() {
+        function submitHandler(event) {
             event.preventDefault();
             const email = document.getElementById("email").value;
             const password = document.getElementById("password").value;
 
             const isExist = isUserExist(email, password);
             if (isExist == false) {
-                document.getElementById("error").innerText = "Invalid login details !!";
+                document.getElementById("error_message").innerText = "Invalid login details !!";
             } else {
                 localStorage.setItem("loggedInUser", email);
                 window.location.href = "./rmmenu.html";

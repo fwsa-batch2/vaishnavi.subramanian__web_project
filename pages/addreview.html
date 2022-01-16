@@ -24,8 +24,9 @@
     <hr>
     <div>
         <form class="form" onsubmit="submitHandler(event)">
-            <input type="text" class="profile" id="name" placeholder="Enter your name" title="Name should neither start with space nor be empty" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" minlength="3" maxlength="30" autofocus required>
-            <textarea name="comment" class="comment" id="feedback" cols="30" rows="5" placeholder="Add your feedback.." pattern="[A-Za-z]+" minlength="2" maxlength="200" required></textarea>
+            <input type="text" class="profile" id="name" placeholder="Enter your name" title="Name should neither start with space nor be empty and no special characters are allowed" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" minlength="3" maxlength="30" autofocus
+                required>
+            <textarea name="comment" class="comment" id="feedback" cols="30" rows="5" placeholder="Add your feedback.." pattern="[A-Za-z]+" minlength="2" maxlength="2000" autofocus required></textarea>
             <button type="reset" class="cancel">Cancel</button>
             <button type="submit" class="post">Post</button>
         </form>

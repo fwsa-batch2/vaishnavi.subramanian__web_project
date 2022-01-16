@@ -5,35 +5,23 @@ body {
     background-attachment: fixed;
 }
 
-.now {
-    margin-left: 47%;
+.cafe_name {
+    text-align: center;
     color: white;
 }
 
-.a {
+.navbar {
+    margin-left: 27%;
+}
+
+.nav_static {
     margin-left: 5%;
     text-decoration: none;
     color: white;
     font-size: 1.5em;
 }
 
-.rm {
-    margin-left: 25%;
-}
-
-.h2 {
-    text-align: center;
-    color: white;
-    margin-top: 4%;
-}
-
-.tab table {
-    width: 100%;
-    color: white;
-    border-bottom: 1px solid;
-}
-
-#cart {
+.nav_color {
     margin-left: 5%;
     color: rgb(87, 69, 69);
     text-decoration: none;
@@ -43,101 +31,23 @@ body {
     padding: 0.4%;
 }
 
+.line {
+    margin-top: 2%;
+}
 
-/* .tab table .li1 {
-    margin-left: 10%;
+.title {
+    text-align: center;
     color: white;
-    font-size: 22px;
+    margin-top: 4%;
 }
 
-.li2 {
+.table_chart {
+    width: 100%;
     color: white;
-    padding-left: 23%;
-    font-size: 22px;
+    border-bottom: 1px solid;
 }
 
-.li3 {
-    color: white;
-    padding-left: 12%;
-    font-size: 22px;
-}
-
-.li4 {
-    color: white;
-    padding-left: 15%;
-    font-size: 22px;
-} */
-
-
-/* #a1 {
-    font-size: 1.5vw;
-    margin-left: 50px;
-    padding-bottom: 20%;
-    color: white;
-}
-
-.button {
-    margin-left: 430px;
-    font-size: 1vw;
-    width: 30px;
-    height: 30px;
-    background-color: white;
-}
-
-#a2 {
-    font-size: 1vw;
-    padding-left: -5%;
-    color: white;
-}
-
-.button2 {
-    margin-left: 20px;
-    font-size: 1vw;
-    width: 30px;
-    height: 30px;
-    background-color: white;
-}
-
-#a3 {
-    padding-left: 190px;
-    font-size: 1.3vw;
-    color: white
-}
-
-#a4 {
-    margin-left: 1250px;
-    padding-top: 1000px;
-    font-size: 1.3vw;
-    color: white;
-}
-
-.img {
-    margin-left: 70px;
-    height: 200px;
-    width: 300px;
-}
-
-.label1 {
-    margin-left: 81.5%;
-    color: white;
-    font-size: 1.5vw;
-}
-
-.label2 {
-    padding: 5%;
-    color: white;
-    font-size: 1.5vw;
-}
-
-.order {
-    color: black;
-    margin-left: 88%;
-    height: 26px;
-    width: 175px;
-    font-size: 1vw;
-} */
-
-.hr-1 {
+.bottom_line {
     margin-top: -1330px;
 }
 

@@ -8,32 +8,33 @@
 </head>
 
 <body>
-    <div>
-        <h1 class="now">R&M Cafe</h1>
-        <span class="rm">
-                <a href="../index.html" class="a-1">Home</a>
-                <a href="#" class="a-1">Menu</a>
-                <a href="./rmreview.html" class="a-1">Review</a>
-                <a href="./rmcontact.html" class="a-1">Contact</a>
-                <a href="#" class="a-1">Cart</a>
-            </span>
-    </div>
-    <br>
-    <hr>
 
-    <div class="div-1">
-        <form class="form" name="form" onsubmit="submitHandler(event)">
+    <h1 class="cafe_name">R&M Cafe</h1>
+    <div class="navbar">
+        <a href="../index.html" class="nav_static">Home</a>
+        <a href="#" class="nav_static">Menu</a>
+        <a href="./rmreview.html" class="nav_static">Review</a>
+        <a href="./rmcontact.html" class="nav_static">Contact</a>
+        <a href="#" class="nav_static">Cart</a>
+    </div>
+
+
+    <hr class="line">
+
+    <div class="div_form">
+        <form class="form_details" name="form" onsubmit="submitHandler(event)">
             Full Name:
-            <input type="text" name="name" minlength="3" maxlength="30" class="input-1" id="fullName" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" autofocus required>
-            <br> Phone Number:<input type="tel" name="number" pattern="[0-9]+" maxlength="10" minlength="10" class="input-2" id="phoneNumber" required>
-            <br> Email Id:<input type="email" name="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="input-2" id="email" required>
+            <input type="text" name="name" minlength="3" maxlength="30" class="input_name" id="fullName" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" autofocus required>
+            <br> Phone Number:<input type="tel" name="number" pattern="[0-9]+" maxlength="10" minlength="10" class="input_ph_mail_pw" id="phoneNumber" autofocus required>
+            <br> Email Id:<input type="email" name="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="input_ph_mail_pw" id="email" autofocus required>
             <br> Set Password:
-            <input type="password" name="password" title="Password should contain atleast 8 characters" pattern=".{8,15}" class="input-2" id="password" required>
+            <input type="password" name="password" title="Password should contain atleast 8 characters" pattern=".{8,15}" class="input_ph_mail_pw" id="password" autofocus required>
             <br>
             <input type="checkbox" name="checkbox" onchange="showPwd()" id="showPassword"><label class="showPassword">Show password</label><br>
-            <input id="input-3" type="checkbox" name="t&c" required>
-            <label class="label-1">I agree to the<a href="./rmtc.html" class="a-2">terms and conditions</a>
-                </label><br>
+            <input class="input_checkbox" type="checkbox" name="t&c" required>
+            <label class="terms">I agree to the
+                    <a href="./rmtc.html" class="conditions">terms and conditions</a>
+                </label>
 
             <div id="error"></div>
             <button type="submit">Register</button>

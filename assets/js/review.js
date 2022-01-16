@@ -1,22 +1,22 @@
-function render() {
+function addingFeedback() {
 
-    let getItem = JSON.parse(localStorage.getItem("feedback"));
-    let a = "";
-    for (let i of getItem) {
-        let c = `
-        <div class="sun">
-        <img src="./../assets/images/perfect.png" class="pic" alt="img">
-        <p class="moon">${i.name}</p>
-        <p class="stars">${i.comment}</p>
+    let parsedFeedback = JSON.parse(localStorage.getItem("feedback"));
+    let feedback = "";
+    for (let i of parsedFeedback) {
+        let newFeedback = `
+        <div class="whole_div">
+        <img src="./../assets/images/perfect.png" class="profile_pic" alt="img">
+        <p class="name">${i.name}</p>
+        <p class="comment">${i.comment}</p>
     </div>
                 `
-        a = a + c
+        feedback = feedback + newFeedback
     }
 
-    document.getElementById("hmm").innerHTML = a;
+    document.getElementById("to_be_added").innerHTML = feedback;
 
 }
-render();
+addingFeedback();
 
 function goToAdd() {
     window.location.href = "./addreview.html"
