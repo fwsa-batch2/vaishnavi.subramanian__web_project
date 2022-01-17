@@ -5,29 +5,43 @@ body {
     background-attachment: fixed;
 }
 
-.h1 {
-    margin-left: 47%;
+.cafe_name {
+    text-align: center;
     color: white;
 }
 
-.a {
+.navbar {
+    margin-left: 27%;
+}
+
+.nav_static {
     margin-left: 5%;
     text-decoration: none;
     color: white;
     font-size: 1.5em;
 }
 
-.cafe {
-    margin-left: 25%;
+.nav_color {
+    margin-left: 5%;
+    color: rgb(87, 69, 69);
+    text-decoration: none;
+    font-size: 1.5em;
+    background-color: rgb(197, 191, 191);
+    border-radius: 30px;
+    padding: 0.4%;
 }
 
-.new {
+.line {
+    margin-top: 2%;
+}
+
+.title {
     color: white;
     text-align: center;
     margin-top: 2%;
 }
 
-.div {
+.form_div {
     background-color: rgb(247, 245, 245);
     opacity: 0.5;
     width: 30%;
@@ -37,7 +51,7 @@ body {
     border-radius: 2%;
 }
 
-.div form table {
+.form_div form table {
     align-items: center;
     width: 100%;
 }
@@ -59,22 +73,7 @@ td {
     padding-top: 30px
 }
 
-.footer {
+footer {
     color: white;
-    margin-top: 100px;
-}
-
-#contact {
-    margin-left: 5%;
-    color: rgb(87, 69, 69);
-    text-decoration: none;
-    font-size: 1.5em;
-    background-color: rgb(197, 191, 191);
-    border-radius: 30px;
-    padding: 0.4%;
-}
-
-.hello {
-    background-color: black;
-    color: white;
+    margin-top: 165px;
 }

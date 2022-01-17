@@ -38,10 +38,7 @@ function submitHandler(event) {
     const detailsInString = JSON.stringify(toBeAdded);
     localStorage.setItem("details", detailsInString);
 
-
     window.location.href = "./login.html";
-
-
 }
 
 function onPageLoad() {
@@ -58,11 +55,11 @@ onPageLoad();
 
 
 function showPwd() {
-    const pass = document.getElementById("showPassword");
-    if (pass.checked) {
-        document.getElementById("password").type = "text";
+    const pass = document.getElementById("password");
+    if (pass.type == "password") {
+        pass.type = "text";
     } else {
-        document.getElementById("password").type = "password";
+        pass.type = "password";
     }
 
 }

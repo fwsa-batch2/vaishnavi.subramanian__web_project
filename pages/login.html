@@ -68,16 +68,15 @@
 
         function getUserDetails() {
             let parsedDetails = JSON.parse(localStorage.getItem("details"));
-            console.log(parsedDetails);
             return parsedDetails;
         }
 
         function showPwd() {
-            const pass = document.getElementById("showPassword");
-            if (pass.checked == true) {
-                document.getElementById("password").type = "text";
+            const pass = document.getElementById("password");
+            if (pass.type == "password") {
+                pass.type = "text";
             } else {
-                document.getElementById("password").type = "password";
+                pass.type = "password";
             }
         }
     </script>

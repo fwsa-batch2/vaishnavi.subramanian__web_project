@@ -8,20 +8,20 @@
 </head>
 
 <body>
-    <div>
-        <h1 class="h1">R&M Cafe</h1>
-        <span class="cafe">
-        <a href="../index.html" class="a">Home</a>
-        <a href="./rmmenu.html" class="a">Menu</a>
-        <a href="./rmreview.html" class="a">Review</a>
-        <a href="./rmcontact.html" id="contact">Contact</a>
-        <a href="./cart.html" class="a">Cart</a>
-      </span>
-    </div><br>
-    <hr>
 
-    <h1 class="new"><em>Contact Us</em></h1>
-    <div class="div">
+    <h1 class="cafe_name">R&M Cafe</h1>
+    <div class="navbar">
+        <a href="../index.html" class="nav_static">Home</a>
+        <a href="./rmmenu.html" class="nav_static">Menu</a>
+        <a href="./rmreview.html" class="nav_static">Review</a>
+        <a href="./rmcontact.html" class="nav_color">Contact</a>
+        <a href="./cart.html" class="nav_static">Cart</a>
+    </div>
+
+    <hr class="line">
+
+    <h1 class="title"><em>Contact Us</em></h1>
+    <div class="form_div">
         <form onsubmit="onSubmit()">
 
             <table class="table">
@@ -29,37 +29,35 @@
                 <th id="empty"></th>
                 <tr>
                     <td>Name</td>
-                    <td><input type="text" name="name" minlength="3" maxlength="20" placeholder="Enter your name" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" autofocus required></td>
+                    <td><input type="text" name="name" placeholder="Enter your name" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" minlength="3" maxlength="25" autofocus required></td>
                 </tr>
 
                 <tr>
                     <td>Email Id</td>
-                    <td><input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email" placeholder="Enter your Email Id" required></td>
+                    <td><input type="email" name="email" placeholder="Enter your Email Id" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autofocus required></td>
                 </tr>
 
                 <tr>
                     <td>Phone Number</td>
-                    <td><input type="tel" name="phone" pattern="[0-9]+" maxlength="10" minlength="10" placeholder="Enter your mobile number" required></td>
+                    <td><input type="tel" name="phone" placeholder="Enter your mobile number" pattern="[0-9]+" maxlength="10" minlength="10" autofocus required></td>
                 </tr>
 
                 <tr>
                     <td>Query</td>
-                    <td><textarea name="name" required></textarea></td>
+                    <td><textarea name="name" placeholder="Type your query" autofocus required></textarea></td>
                 </tr>
             </table>
-            <br>
+
             <button type="submit" name="button" class="button">Submit</button>
 
         </form>
     </div>
 
     <footer>
-        <div class="footer">
-            <h1>For Info</h1>
-            <p>Mail ID: r&mcafe@gmail.com</p>
-            <p>Telephone: 0421-433243</p>
-            <p>R&M Cafe Inc. &copy; All rights reserved (2021)</p>
-        </div>
+        <h1>For Info</h1>
+        <p>Mail ID: r&mcafe@gmail.com</p>
+        <p>Telephone: 0421-433243</p>
+        <p>R&M Cafe Inc. &copy; All rights reserved (2021)</p>
     </footer>
 
     <script>

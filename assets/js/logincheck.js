@@ -1,6 +1,6 @@
 function check() {
-    let chk = localStorage.getItem("loggedInUser");
-    if (chk == null) {
+    let loginCheck = localStorage.getItem("loggedInUser");
+    if (loginCheck == null) {
         window.location.href = "./../pages/login.html"
     }
 }
