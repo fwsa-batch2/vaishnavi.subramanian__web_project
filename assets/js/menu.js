@@ -26,8 +26,7 @@ function renderCoffee(coffeeList) {
                     <button data-coffee="${a.coffeeName}" onclick="addToCart(event)" class="button_cart">
                         Add to cart
                      </button>
-                </tr> 
-                      `;
+                </tr> `;
         add = add + coffee;
     }
     document.getElementById("coffeeList").innerHTML = add;
@@ -45,11 +44,11 @@ function addToCart(event) {
         image: coffeeObject.imageUrl,
         price: parseFloat(coffeeObject.price),
         quantity: numberOfQuantity
-    }
+    };
 
     cart.push(cartItem);
     localStorage.setItem("cart", JSON.stringify(cart));
-    window.location.href = "./cart.html"
+    window.location.href = "./cart.html";
 }
 
 function onLoad() {

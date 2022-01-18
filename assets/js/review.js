@@ -18,6 +18,6 @@ function addingFeedback() {
 addingFeedback();
 
 function goToAdd() {
-    window.location.href = "./addreview.html"
+    window.location.href = "./addreview.html";
 
 }

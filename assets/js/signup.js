@@ -42,7 +42,7 @@ function submitHandler(event) {
         "contact": contact,
         "email": email,
         "password": password
-    }
+    };
 
     toBeAdded.push(userDetail);
 
@@ -59,5 +59,4 @@ function showPwd() {
     } else {
         pass.type = "password";
     }
-
 }

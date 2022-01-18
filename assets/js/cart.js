@@ -20,8 +20,7 @@ function extractCoffee(items1) {
                   <td class="coffee_total">
                     ₹ ${totalPrice}
                   </td>
-              </tr>
-              `;
+              </tr>`;
         vcbl = vcbl + coffees;
     }
     document.getElementById("table").innerHTML = vcbl;
@@ -30,8 +29,7 @@ function extractCoffee(items1) {
                 <p class="tot">Total = ₹ ${total}</p>
                 <hr>
                 <button class="order" onclick="placeOrder()">Place Order</button>
-
-                 `
+                 `;
     document.getElementById("tot_order").innerHTML = totOrder;
 }
 

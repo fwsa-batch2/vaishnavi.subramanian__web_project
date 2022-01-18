@@ -14,12 +14,12 @@ function submitHandler(event) {
         "description": description,
         "imageUrl": imageUrl,
         "price": price,
-    }
+    };
 
     toBeAdded.push(coffee);
     const coffeeInString = JSON.stringify(toBeAdded);
     localStorage.setItem("toBeAdded", coffeeInString);
-    window.location.href = "./../pages/rmmenu.html"
+    window.location.href = "./../pages/rmmenu.html";
 }
 
 function onPageLoad() {
