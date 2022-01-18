@@ -4,19 +4,19 @@
 <head>
     <meta charset="utf-8">
     <title>R&M Cafe</title>
-    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="./../assets/css/login.css">
 </head>
 
 <body>
 
     <h1 class="cafe_name">R&M Cafe</h1>
-    <div class="navbar">
-        <a class="nav_static" href="../index.html">Home</a>
+    <nav class="navbar">
+        <a class="nav_static" href="./../index.html">Home</a>
         <a class="nav_static" href="#">Menu</a>
         <a class="nav_static" href="./rmreview.html">Review</a>
         <a class="nav_static" href="./rmcontact.html">Contact</a>
         <a class="nav_static" href="#">Cart</a>
-    </div>
+    </nav>
 
     <hr class="line">
 
@@ -41,7 +41,7 @@
             const password = document.getElementById("password").value;
 
             const isExist = isUserExist(email, password);
-            if (isExist == false) {
+            if (!isExist) {
                 document.getElementById("error_message").innerText = "Invalid login details !!";
             } else {
                 localStorage.setItem("loggedInUser", email);
@@ -53,17 +53,15 @@
             let isthere = false;
 
             const userList = getUserDetails();
-            for (i = 0; i < userList.length; i++) {
-                let user = userList[i];
-                let oldEmail = user.email;
-                let oldPassword = user.password;
-                if (oldEmail === newEmail && oldPassword === newPassword) {
+            for (let i of userList) {
+                let oldEmail = i.email;
+                let oldPassword = i.password;
+                if (oldEmail == newEmail && oldPassword == newPassword) {
                     isthere = true;
                     break;
                 }
             }
             return isthere;
-
         }
 
         function getUserDetails() {

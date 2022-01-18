@@ -1,5 +1,16 @@
 let toBeAdded = [];
 
+function onPageLoad() {
+    let parse = JSON.parse(localStorage.getItem("details"));
+    if (parse != null) {
+        toBeAdded = parse;
+    } else {
+        localStorage.setItem("details", JSON.stringify([]));
+    }
+    return toBeAdded;
+}
+
+onPageLoad();
 
 function submitHandler(event) {
     event.preventDefault();
@@ -40,19 +51,6 @@ function submitHandler(event) {
 
     window.location.href = "./login.html";
 }
-
-function onPageLoad() {
-    let parse = JSON.parse(localStorage.getItem("details"));
-    if (parse != null) {
-        toBeAdded = parse;
-    } else {
-        localStorage.setItem("details", JSON.stringify([]));
-    }
-    return toBeAdded;
-}
-
-onPageLoad();
-
 
 function showPwd() {
     const pass = document.getElementById("password");

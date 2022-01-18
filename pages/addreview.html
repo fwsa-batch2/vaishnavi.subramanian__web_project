@@ -3,34 +3,30 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>R&M Cafe</title>
     <link rel="stylesheet" href="./../assets/css/addreview.css">
 </head>
 
 <body>
-    <div>
-        <h1 class="now">R&M Cafe</h1>
-        <span class="rm">
-        <a href="../index.html" class="a">Home</a>
-        <a href="./rmmenu.html" class="a">Menu</a>
-        <a href="./rmreview.html" class="a">Review</a>
-        <a href="./rmcontact.html" class="a">Contact</a>
-        <a href="./cart.html" class="a">Cart</a>
-   </span>
-    </div>
-    <br>
-    <hr>
-    <div>
-        <form class="form" onsubmit="submitHandler(event)">
-            <input type="text" class="profile" id="name" placeholder="Enter your name" title="Name should neither start with space nor be empty and no special characters are allowed" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" minlength="3" maxlength="30" autofocus
-                required>
-            <textarea name="comment" class="comment" id="feedback" cols="30" rows="5" placeholder="Add your feedback.." pattern="[A-Za-z]+" minlength="2" maxlength="2000" autofocus required></textarea>
-            <button type="reset" class="cancel">Cancel</button>
-            <button type="submit" class="post">Post</button>
-        </form>
-    </div>
+
+    <h1 class="cafe_name">R&M Cafe</h1>
+    <nav class="navbar">
+        <a href="./../index.html" class="nav_static">Home</a>
+        <a href="./rmmenu.html" class="nav_static">Menu</a>
+        <a href="./rmreview.html" class="nav_static">Review</a>
+        <a href="./rmcontact.html" class="nav_static">Contact</a>
+        <a href="./cart.html" class="nav_static">Cart</a>
+    </nav>
+
+    <hr class="line">
+
+    <form class="form" onsubmit="submitHandler(event)">
+        <input type="text" class="input_profile" id="name" placeholder="Enter your name" title="Name should neither start with space nor be empty and no special characters are allowed" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" minlength="3" maxlength="30" autofocus
+            required>
+        <textarea name="comment" class="comment" id="feedback" cols="30" rows="5" placeholder="Add your feedback.." pattern="[A-Za-z]+" minlength="2" maxlength="2000" autofocus required></textarea>
+        <button type="reset" class="button_cancel">Cancel</button>
+        <button type="submit" class="button_post">Post</button>
+    </form>
 
     <script src="./../assets/js/addreview.js"></script>
 </body>

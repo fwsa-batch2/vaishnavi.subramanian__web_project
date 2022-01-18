@@ -37,3 +37,7 @@ function extractCoffee(items1) {
 
 const items = JSON.parse(localStorage.getItem("cart"));
 extractCoffee(items);
+
+function placeOrder() {
+    window.location.href = "./rmpayment.html";
+}

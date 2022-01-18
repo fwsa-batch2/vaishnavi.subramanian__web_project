@@ -8,9 +8,8 @@ function addingFeedback() {
         <img src="./../assets/images/perfect.png" class="profile_pic" alt="img">
         <p class="name">${i.name}</p>
         <p class="comment">${i.comment}</p>
-    </div>
-                `
-        feedback = feedback + newFeedback
+        </div>`;
+        feedback = feedback + newFeedback;
     }
 
     document.getElementById("to_be_added").innerHTML = feedback;

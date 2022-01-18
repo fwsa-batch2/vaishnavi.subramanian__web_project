@@ -5,20 +5,24 @@ body {
     background-attachment: fixed;
 }
 
-.now {
-    margin-left: 47%;
+.cafe_name {
+    text-align: center;
     color: white;
 }
 
-.a {
+.navbar {
+    margin-left: 27%;
+}
+
+.nav_static {
     margin-left: 5%;
     text-decoration: none;
     color: white;
     font-size: 1.5em;
 }
 
-.rm {
-    margin-left: 25%;
+.line {
+    margin-top: 2%;
 }
 
 .form {
@@ -28,7 +32,7 @@ body {
     margin-top: 290px;
 }
 
-.profile {
+.input_profile {
     margin-top: 2%;
     margin-bottom: 2%;
     margin-left: 10%;
@@ -45,7 +49,7 @@ body {
     font-size: x-large;
 }
 
-.cancel {
+.button_cancel {
     background-color: black;
     color: white;
     font-size: x-large;
@@ -58,7 +62,7 @@ body {
     margin-top: -10%;
 }
 
-.post {
+.button_post {
     background-color: black;
     color: white;
     font-size: x-large;

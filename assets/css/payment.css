@@ -5,18 +5,28 @@ body {
     background-attachment: fixed;
 }
 
-.now {
-    margin-left: 47%;
+.cafe_name {
+    text-align: center;
     color: white;
 }
 
-.a {
+.navbar {
+    margin-left: 27%;
+}
+
+.nav_static {
     margin-left: 5%;
     text-decoration: none;
     color: white;
     font-size: 1.5em;
 }
 
-.rm {
-    margin-left: 25%;
+.line {
+    margin-top: 2%;
+}
+
+p {
+    color: white;
+    font-size: xx-large;
+    text-align: center;
 }
