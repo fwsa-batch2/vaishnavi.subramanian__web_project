@@ -11,13 +11,10 @@ function addingFeedback() {
         </div>`;
         feedback = feedback + newFeedback;
     }
-
     document.getElementById("to_be_added").innerHTML = feedback;
-
 }
 addingFeedback();
 
 function goToAdd() {
     window.location.href = "./addreview.html";
-
 }

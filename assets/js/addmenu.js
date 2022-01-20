@@ -1,5 +1,17 @@
 let toBeAdded = [];
 
+function onPageLoad() {
+    let parse = JSON.parse(localStorage.getItem("toBeAdded"));
+    if (parse != null) {
+        toBeAdded = parse;
+        console.log(toBeAdded);
+    } else {
+        localStorage.setItem("toBeAdded", JSON.stringify([]));
+    }
+    return toBeAdded;
+}
+
+onPageLoad();
 
 function submitHandler(event) {
     event.preventDefault();
@@ -21,17 +33,3 @@ function submitHandler(event) {
     localStorage.setItem("toBeAdded", coffeeInString);
     window.location.href = "./../pages/rmmenu.html";
 }
-
-function onPageLoad() {
-    let parse = JSON.parse(localStorage.getItem("toBeAdded"));
-    if (parse != null) {
-        toBeAdded = parse;
-        console.log(toBeAdded);
-
-    } else {
-        localStorage.setItem("toBeAdded", JSON.stringify([]));
-    }
-    return toBeAdded;
-}
-
-onPageLoad();
