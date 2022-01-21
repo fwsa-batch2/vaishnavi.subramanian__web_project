@@ -48,7 +48,7 @@ function submitHandler(event) {
 
     const detailsInString = JSON.stringify(toBeAdded);
     localStorage.setItem("details", detailsInString);
-
+    alert("Your acoount has been created successfully !! Please login to continue.")
     window.location.href = "./login.html";
 }
 
