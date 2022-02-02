@@ -37,30 +37,27 @@ function addToCart(event) {
     const data_coffee = event.target.dataset.coffee;
     const coffeeObject = parsed.find(item => item.coffeeName === data_coffee);
 
-    let numberOfQuantity = parseFloat(prompt("Enter the number of quantity"));
-
     const cartItem = {
         name: coffeeObject.coffeeName,
         image: coffeeObject.imageUrl,
-        price: parseFloat(coffeeObject.price),
-        quantity: numberOfQuantity
+        price: parseFloat(coffeeObject.price)
     };
 
     cart.push(cartItem);
-    localStorage.setItem("cart", JSON.stringify(cart));
+    localStorage.setItem("CART", JSON.stringify(cart));
     window.location.href = "./cart.html";
 }
 
 function onLoad() {
-    let items = JSON.parse(localStorage.getItem("cart"));
+    let items = JSON.parse(localStorage.getItem("CART"));
     if (items != null) {
         cart = items;
     } else {
-        localStorage.setItem("cart", JSON.stringify([]));
+        localStorage.setItem("CART", JSON.stringify([]));
     }
     return cart;
 }
 
-const parsed = JSON.parse(localStorage.getItem("toBeAdded"));
+const parsed = JSON.parse(localStorage.getItem("TOBEADDED"));
 renderCoffee(parsed);
 onLoad();

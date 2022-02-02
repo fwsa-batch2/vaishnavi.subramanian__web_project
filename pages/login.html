@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>R&M Cafe</title>
+    <link rel="icon" href="./../assets/images/logo2.png" type="image/x-icon">
     <link rel="stylesheet" href="./../assets/css/login.css">
 </head>
 
@@ -32,6 +33,7 @@
             </div>
             <button type="submit">Login</button>
         </form>
+
     </div>
 
     <script>
@@ -44,7 +46,7 @@
             if (!isExist) {
                 document.getElementById("error_message").innerText = "Invalid login details !!";
             } else {
-                localStorage.setItem("loggedInUser", email);
+                localStorage.setItem("LOGGEDINUSER", email);
                 window.location.href = "./rmmenu.html";
             }
         }
@@ -65,7 +67,7 @@
         }
 
         function getUserDetails() {
-            let parsedDetails = JSON.parse(localStorage.getItem("details"));
+            let parsedDetails = JSON.parse(localStorage.getItem("DETAILS"));
             return parsedDetails;
         }
 

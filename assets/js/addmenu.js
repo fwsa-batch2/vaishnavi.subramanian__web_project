@@ -1,12 +1,12 @@
 let toBeAdded = [];
 
 function onPageLoad() {
-    let parse = JSON.parse(localStorage.getItem("toBeAdded"));
+    let parse = JSON.parse(localStorage.getItem("TOBEADDED"));
     if (parse != null) {
         toBeAdded = parse;
         console.log(toBeAdded);
     } else {
-        localStorage.setItem("toBeAdded", JSON.stringify([]));
+        localStorage.setItem("TOBEADDED", JSON.stringify([]));
     }
     return toBeAdded;
 }
@@ -30,6 +30,6 @@ function submitHandler(event) {
 
     toBeAdded.push(coffee);
     const coffeeInString = JSON.stringify(toBeAdded);
-    localStorage.setItem("toBeAdded", coffeeInString);
+    localStorage.setItem("TOBEADDED", coffeeInString);
     window.location.href = "./../pages/rmmenu.html";
 }

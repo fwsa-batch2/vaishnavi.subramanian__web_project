@@ -1,11 +1,11 @@
 let feedback = [];
 
 function onPageLoadHandler() {
-    let parse = JSON.parse(localStorage.getItem("feedback"));
+    let parse = JSON.parse(localStorage.getItem("FEEDBACK"));
     if (parse != null) {
         feedback = parse;
     } else {
-        localStorage.setItem("feedback", JSON.stringify([]));
+        localStorage.setItem("FEEDBACK", JSON.stringify([]));
     }
     return feedback;
 }
@@ -21,6 +21,6 @@ function submitHandler(event) {
         "comment": comment
     };
     feedback.push(review);
-    localStorage.setItem("feedback", JSON.stringify(feedback));
+    localStorage.setItem("FEEDBACK", JSON.stringify(feedback));
     window.location.href = "./../pages/rmreview.html";
 }

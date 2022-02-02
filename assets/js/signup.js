@@ -1,11 +1,11 @@
 let toBeAdded = [];
 
 function onPageLoad() {
-    let parse = JSON.parse(localStorage.getItem("details"));
+    let parse = JSON.parse(localStorage.getItem("DETAILS"));
     if (parse != null) {
         toBeAdded = parse;
     } else {
-        localStorage.setItem("details", JSON.stringify([]));
+        localStorage.setItem("DETAILS", JSON.stringify([]));
     }
     return toBeAdded;
 }
@@ -20,7 +20,7 @@ function submitHandler(event) {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
-    const parse = localStorage.getItem("details");
+    const parse = localStorage.getItem("DETAILS");
     const array = JSON.parse(parse);
 
     let isEmailAlreadyExist = false;
@@ -47,8 +47,8 @@ function submitHandler(event) {
     toBeAdded.push(userDetail);
 
     const detailsInString = JSON.stringify(toBeAdded);
-    localStorage.setItem("details", detailsInString);
-    alert("Your acoount has been created successfully !! Please login to continue.")
+    localStorage.setItem("DETAILS", detailsInString);
+    alert("Your account has been created successfully !! Please login to continue.")
     window.location.href = "./login.html";
 }
 

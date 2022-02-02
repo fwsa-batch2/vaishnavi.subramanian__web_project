@@ -1,6 +1,6 @@
 function addingFeedback() {
 
-    let parsedFeedback = JSON.parse(localStorage.getItem("feedback"));
+    let parsedFeedback = JSON.parse(localStorage.getItem("FEEDBACK"));
     let feedback = "";
     for (let i of parsedFeedback) {
         let newFeedback = `

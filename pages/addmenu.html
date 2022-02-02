@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>R&M Cafe</title>
+    <link rel="icon" href="./../assets/images/logo2.png" type="image/x-icon" />
     <link rel="stylesheet" href="./../assets/css/addmenu.css" />
     <script src="./../assets/js/admincheck.js"></script>
 </head>
@@ -31,11 +32,11 @@
             </legend>
 
             <label class="coffee">Coffee Name :</label>
-            <input type="text" id="coffeeName" pattern="^[a-zA-Z0-9_]+([a-zA-Z0-9_]+)*$" autofocus required />
+            <input type="text" id="coffeeName" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" autofocus required />
 
             <label>Description :</label>
             <textarea name="description" id="description" cols="30" rows="10" minlength="3" maxlength="300" autofocus required></textarea>
-
+            <br />
             <label>Image url :</label>
             <input type="text" id="imageUrl" autofocus required />
             <br />

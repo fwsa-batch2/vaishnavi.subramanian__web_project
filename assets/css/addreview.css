@@ -60,6 +60,7 @@ body {
     float: left;
     margin-left: 79%;
     margin-top: -10%;
+    cursor: pointer;
 }
 
 .button_post {
@@ -72,4 +73,5 @@ body {
     float: left;
     margin-left: 79%;
     margin-top: -5.5%;
+    cursor: pointer;
 }

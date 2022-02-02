@@ -99,3 +99,9 @@ body {
     font-size: x-large;
     padding-bottom: 1.8%;
 }
+
+.quantity {
+    width: 20px;
+    text-align: center;
+    border-radius: 4px;
+}

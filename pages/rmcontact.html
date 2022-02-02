@@ -2,13 +2,13 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>R&M Cafe</title>
-    <link rel="stylesheet" href="./../assets/css/contact.css">
+    <link rel="icon" href="./../assets/images/logo2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./../assets/css/contact.css" />
 </head>
 
 <body>
-
     <h1 class="cafe_name">R&M Cafe</h1>
     <nav class="navbar">
         <a href="./../index.html" class="nav_static">Home</a>
@@ -18,38 +18,44 @@
         <a href="./cart.html" class="nav_static">Cart</a>
     </nav>
 
-    <hr class="line">
+    <hr class="line" />
 
     <h1 class="title"><em>Contact Us</em></h1>
     <div class="form_div">
         <form onsubmit="onSubmit()">
-
             <table class="table">
                 <caption></caption>
                 <th id="empty"></th>
                 <tr>
                     <td>Name</td>
-                    <td><input type="text" name="name" placeholder="Enter your name" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" minlength="3" maxlength="25" autofocus required></td>
+                    <td>
+                        <input type="text" name="name" placeholder="Enter your name" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" minlength="3" maxlength="25" autofocus required />
+                    </td>
                 </tr>
 
                 <tr>
                     <td>Email Id</td>
-                    <td><input type="email" name="email" placeholder="Enter your Email Id" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autofocus required></td>
+                    <td>
+                        <input type="email" name="email" placeholder="Enter your Email Id" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autofocus required />
+                    </td>
                 </tr>
 
                 <tr>
                     <td>Phone Number</td>
-                    <td><input type="tel" name="phone" placeholder="Enter your mobile number" pattern="[0-9]+" maxlength="10" minlength="10" autofocus required></td>
+                    <td>
+                        <input type="tel" name="phone" placeholder="Enter your mobile number" pattern="[0-9]+" maxlength="10" minlength="10" autofocus required />
+                    </td>
                 </tr>
 
                 <tr>
                     <td>Query</td>
-                    <td><textarea name="name" placeholder="Type your query" autofocus required></textarea></td>
+                    <td>
+                        <textarea name="name" placeholder="Type your query" autofocus required></textarea>
+                    </td>
                 </tr>
             </table>
 
             <button type="submit" name="button" class="button">Submit</button>
-
         </form>
     </div>
 
@@ -62,10 +68,11 @@
 
     <script>
         function onSubmit() {
-            alert("Your query has been submitted successfully.We will reach you out soon.")
+            alert(
+                "Your query has been submitted successfully.We will reach you out soon."
+            );
         }
     </script>
-
 </body>
 
 </html>
