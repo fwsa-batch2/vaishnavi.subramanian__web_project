@@ -33,19 +33,23 @@ function renderCoffee(coffeeList) {
 }
 
 function addToCart(event) {
+    let user = localStorage.getItem("LOGGEDINUSER");
+    if (user === null) {
+        alert("You have to login");
+    } else {
+        const data_coffee = event.target.dataset.coffee;
+        const coffeeObject = parsed.find(item => item.coffeeName === data_coffee);
 
-    const data_coffee = event.target.dataset.coffee;
-    const coffeeObject = parsed.find(item => item.coffeeName === data_coffee);
+        const cartItem = {
+            name: coffeeObject.coffeeName,
+            image: coffeeObject.imageUrl,
+            price: parseFloat(coffeeObject.price)
+        };
 
-    const cartItem = {
-        name: coffeeObject.coffeeName,
-        image: coffeeObject.imageUrl,
-        price: parseFloat(coffeeObject.price)
-    };
-
-    cart.push(cartItem);
-    localStorage.setItem("CART", JSON.stringify(cart));
-    window.location.href = "./cart.html";
+        cart.push(cartItem);
+        localStorage.setItem("CART", JSON.stringify(cart));
+        window.location.href = "./cart.html";
+    }
 }
 
 function onLoad() {

@@ -1,14 +1,13 @@
-let toBeAdded = [];
+let coffeeToBeAdded = [];
 
 function onPageLoad() {
-    let parse = JSON.parse(localStorage.getItem("TOBEADDED"));
+    let parse = JSON.parse(localStorage.getItem("COFFEELIST"));
     if (parse != null) {
-        toBeAdded = parse;
-        console.log(toBeAdded);
+        coffeeToBeAdded = parse;
     } else {
-        localStorage.setItem("TOBEADDED", JSON.stringify([]));
+        localStorage.setItem("COFFEELIST", JSON.stringify([]));
     }
-    return toBeAdded;
+    return coffeeToBeAdded;
 }
 
 onPageLoad();
@@ -28,8 +27,8 @@ function submitHandler(event) {
         "price": price,
     };
 
-    toBeAdded.push(coffee);
-    const coffeeInString = JSON.stringify(toBeAdded);
-    localStorage.setItem("TOBEADDED", coffeeInString);
+    coffeeToBeAdded.push(coffee);
+    const coffeeInString = JSON.stringify(coffeeToBeAdded);
+    localStorage.setItem("COFFEELIST", coffeeInString);
     window.location.href = "./../pages/rmmenu.html";
 }

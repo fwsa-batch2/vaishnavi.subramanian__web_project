@@ -1,5 +1,4 @@
 function addingFeedback() {
-
     let parsedFeedback = JSON.parse(localStorage.getItem("FEEDBACK"));
     let feedback = "";
     for (let i of parsedFeedback) {
@@ -16,5 +15,11 @@ function addingFeedback() {
 addingFeedback();
 
 function goToAdd() {
-    window.location.href = "./addreview.html";
+    let user = localStorage.getItem("LOGGEDINUSER");
+    if (user === null) {
+        alert("You have to login !");
+    } else {
+        window.location.href = "./addreview.html";
+    }
+
 }

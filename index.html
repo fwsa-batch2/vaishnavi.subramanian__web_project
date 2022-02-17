@@ -44,7 +44,16 @@
         }
 
         function logout() {
-            localStorage.removeItem("loggedInUser");
+            let user = localStorage.getItem("LOGGEDINUSER");
+            if (user) {
+                if (confirm("Are you sure you want to log out ?")) {
+                    localStorage.removeItem("LOGGEDINUSER");
+                }
+            } else {
+                alert("You have not logged in.")
+            }
+
+
         }
     </script>
 </body>
