@@ -1,0 +1,38 @@
+body {
+    background-attachment: fixed;
+    background-image: url(./../images/wall3.webp);
+    background-repeat: no-repeat;
+}
+
+.cafe_name {
+    text-align: center;
+    color: white;
+}
+
+.navbar {
+    margin-left: 27%;
+}
+
+.nav_static {
+    margin-left: 5%;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+}
+
+.line {
+    margin-top: 2%;
+}
+
+.gif {
+    border-radius: 100%;
+    margin-top: 60px;
+    margin-left: 560px;
+    width: 700px;
+}
+
+.success_text {
+    color: white;
+    font-size: 40px;
+    margin-left: 640px;
+}

@@ -43,8 +43,8 @@ body {
 
 .table_chart {
     width: 100%;
-    color: white;
     border-bottom: 1px solid;
+    color: white;
 }
 
 .bottom_line {

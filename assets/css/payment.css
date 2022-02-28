@@ -25,8 +25,125 @@ body {
     margin-top: 2%;
 }
 
-p {
-    color: white;
+.payment_background {
+    background-color: white;
+    color: black;
+    margin-top: 80px;
+    margin-left: 340px;
+    height: 540px;
+    width: 1200px;
+    opacity: 0.5;
+}
+
+.atm_card {
+    margin-left: 40px;
+}
+
+.text {
+    color: black;
     font-size: xx-large;
-    text-align: center;
+    margin-top: -480px;
+    margin-bottom: 50px;
+    margin-left: 640px;
+}
+
+.input_name {
+    color: black;
+    margin-left: 640px;
+    font-size: large;
+}
+
+#card_name {
+    margin-top: 10px;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid black;
+    width: 500px;
+    margin-bottom: 50px;
+}
+
+.input_cardnumber {
+    color: black;
+    margin-left: 640px;
+    font-size: large;
+}
+
+#card_number {
+    margin-top: 10px;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid black;
+    width: 500px;
+    margin-bottom: 50px;
+}
+
+.validThru {
+    color: black;
+    margin-left: 640px;
+    font-size: large;
+}
+
+#validity {
+    margin-top: 10px;
+    font-size: large;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid black;
+    width: 70px;
+}
+
+.slash {
+    margin-left: 735px;
+    margin-top: -30px;
+    font-size: 30px;
+    width: 15px;
+}
+
+#validity_2 {
+    color: black;
+    font-size: large;
+    margin-left: 760px;
+    margin-top: -61px;
+    position: absolute;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid black;
+    width: 70px;
+}
+
+.cvv {
+    margin-left: 1040px;
+    margin-top: -93px;
+    position: absolute;
+    font-size: larger;
+}
+
+#input_cvv {
+    color: black;
+    font-size: larger;
+    margin-left: 1040px;
+    margin-top: -62px;
+    position: absolute;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid black;
+    width: 103px;
+}
+
+.pay {
+    height: 50px;
+    width: 170px;
+    font-size: 35px;
+    margin-left: 820px;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.pay:hover {
+    background-color: white;
+    color: black;
+    border: black solid;
 }

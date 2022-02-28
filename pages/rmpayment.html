@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>R&M Cart</title>
+    <title>R&M Cafe</title>
     <link rel="icon" href="./../assets/images/logo2.png" type="image/x-icon">
     <link rel="stylesheet" href="./../assets/css/payment.css">
 </head>
@@ -21,7 +21,36 @@
 
     <hr class="line">
 
-    <p>..Coming soon..</p>
+    <form class="payment_background" onsubmit="submitHandler()">
+        <img src="./../assets/images/atmcard.jpg" alt="card_image" class="atm_card">
+
+        <p class="text">Payment Details</p>
+
+        <label class="input_name">CARDHOLDER NAME</label><br>
+        <input type="text" class="input_name" oninput="this.value = this.value.toUpperCase()" id="card_name" minlength="3" maxlength="50" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" autofocus required>
+
+        <label class="input_cardnumber">CARD NUMBER</label><br>
+        <input type="tel" class="input_cardnumber" id="card_number" title="**Card number should contain only 16 numbers" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required>
+
+        <label class="validThru">VALID THRU</label><br>
+        <input type="tel" class="validThru" id="validity" placeholder="MM" title="Numbers are only allowed" pattern="[0-9]+" maxlength="2" minlength="2" autofocus required>
+
+        <p class="slash">/</p>
+
+        <input type="tel" id="validity_2" placeholder="YY" title="Numbers are only allowed" pattern="[0-9]+" maxlength="2" minlength="2" autofocus required>
+
+        <label class="cvv">CVV</label>
+        <input type="password" id="input_cvv" placeholder="***" title="Numbers are only allowed" pattern="[0-9]+" maxlength="3" minlength="3" autofocus required>
+
+        <button type="submit" class="pay">PAY</button>
+    </form>
+
+    <script>
+        function submitHandler() {
+            event.preventDefault();
+            window.location.href = "./ordersuccess.html";
+        }
+    </script>
 </body>
 
 </html>

@@ -29,7 +29,7 @@ function extractCoffee(items1) {
     document.getElementById("table").innerHTML = vcbl;
 
     let totOrder = `
-                <p class="tot" id="total">Total = ₹150</p>
+                <p class="tot" id="total">Total = ₹130</p>
                 <hr>
                 <button type='button' class="order" onclick="placeOrder()">Place Order</button>
                  `;
